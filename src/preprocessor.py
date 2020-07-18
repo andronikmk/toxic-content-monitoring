@@ -45,7 +45,7 @@ toxic_words = set(filter(lambda x: len(x) >= 4, toxic_words))
 printable = set(string.printable)
 
 def clean_text(x):
-    """[Function for cleaning text to remove characters, user identification, and
+    """[Function for cleaning text and removing characters, user identification, and
     non-printable characters that can interfere with the model's ability to make
     accurate predictions.]
 

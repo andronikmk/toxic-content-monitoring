@@ -28,7 +28,7 @@ class ToxicClassifierModel(nn.Module):
         self.hidden3 = nn.Linear(DENSE_HIDDEN_UNITS, 6)
 
     def forward(self, x):
-        """[Feed forward network. It takes the input and feeds it through several layers
+        """[A feed forward network. It takes the input and feeds it through several layers
         one after the other, and returns an output]
 
         Args:

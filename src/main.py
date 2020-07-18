@@ -115,7 +115,7 @@ def custom_openapi():
     """[Generate the OpenAPI schema]
 
     Returns:
-        [function]: [use the same utility function to generate the OpenAPI schema, inside a custom_openapi() function]
+        [function]: [Use the same utility function to generate the OpenAPI schema, inside a custom_openapi() function]
     """
     if app.openapi_schema:
         return app.openapi_schema
