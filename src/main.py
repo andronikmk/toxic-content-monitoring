@@ -1,29 +1,23 @@
-"""
-Main
-"""
 from fastapi import FastAPI
 from fastapi.openapi.utils import get_openapi
 from pydantic import BaseModel
 import torch
 from torch.autograd import Variable
 from torch.nn.utils.rnn import pad_sequence
-from model import ToxicClassifierModel, vectors
-from preprocessor import normalize_comment, clean_text
-
+from src.model import ToxicClassifierModel, vectors
+from src.preprocessor import normalize_comment, clean_text
 
 # load model
 model = ToxicClassifierModel()
 model.load_state_dict(torch.load("data/TCM_2.pt", map_location=torch.device('cpu')))
 model.eval()
 
-
-
+# FastAPI
 app = FastAPI()
 
 # makes request body rather than parameter
 class Data(BaseModel):
     text: str
-
 
 @app.post("/predict/")
 async def predict(data: Data):
@@ -82,7 +76,7 @@ async def predict(data: Data):
     indicates the model successfully classifies toxic vs non-toxic. The ROC represents
     the probability curve.
 
-    The F1 score for this model is 0.753 and the ROC-AUC score is 0.987
+    The F1 score for this model is 0.753 and the ROC-AUC score is 0.987.
     """
 
     # clean text to remove characters and metadata that may interfere with accuracy of model
@@ -118,6 +112,11 @@ async def predict(data: Data):
 
 # Customize documentation
 def custom_openapi():
+    """[Generate the OpenAPI schema]
+
+    Returns:
+        [function]: [use the same utility function to generate the OpenAPI schema, inside a custom_openapi() function]
+    """
     if app.openapi_schema:
         return app.openapi_schema
     openapi_schema = get_openapi(
@@ -133,6 +132,5 @@ def custom_openapi():
     }
     app.openapi_schema = openapi_schema
     return app.openapi_schema
-
 
 app.openapi = custom_openapi
