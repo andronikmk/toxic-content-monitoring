@@ -7,8 +7,8 @@ from pydantic import BaseModel
 import torch
 from torch.autograd import Variable
 from torch.nn.utils.rnn import pad_sequence
-from model import ToxicClassifierModel, vectors
-from preprocessor import normalize_comment, clean_text
+from src.model import ToxicClassifierModel, vectors
+from src.preprocessor import normalize_comment, clean_text
 
 
 # load model
@@ -136,3 +136,6 @@ def custom_openapi():
 
 
 app.openapi = custom_openapi
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=5000, log_level="info", reload=True)

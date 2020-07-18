@@ -7,4 +7,4 @@ resources:
   memory_gb: 72
   disk_size_gb: 60
 instance_class: F4_1G
-entrypoint: gunicorn main:app -w 24 -k uvicorn.workers.UvicornWorker
+entrypoint: gunicorn src.main:app -w 24 -k uvicorn.workers.UvicornWorker
