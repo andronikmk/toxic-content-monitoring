@@ -1,5 +1,5 @@
 The API uses FastAPI for [documentation](https://fastapi.tiangolo.com/tutorial/first-steps/)
-* ```uvicorn main:app``` will run the API locally. ```uvicorn``` can be installed via `pip`.
+* ```uvicorn src.main:app --host 0.0.0.0``` will run the API locally. ```uvicorn``` can be installed via `pip`.
 * going to the url for the api with /docs will allow one to see the documentation and test requests.
 
 It is currently deployed through Google's Cloud Services: Google Cloud Storage and App-Engine: [documentation](https://cloud.google.com/appengine/docs)
