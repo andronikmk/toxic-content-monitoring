@@ -1,0 +1,9 @@
+{
+    "estimator__max_depth": {"_type":"randint","_value":[2,15]},
+    "estimator__n_estimators": {"_type":"randint","_value":[10, 500]},
+    "estimator__max_features": {"_type":"choice","_value":["log2", "sqrt"]},
+    "estimator__criterion": {"_type":"choice","_value":["gini","entropy"]},
+    "estimator__bootstrap": {"_type":"choice","_value":[true, false]},
+    "estimator__min_samples_leaf": {"_type":"choice","_value":[1,2,4,8,16,32,64]},
+    "estimator__min_samples_split": {"_type":"choice","_value":[8,16,32,64]}
+}

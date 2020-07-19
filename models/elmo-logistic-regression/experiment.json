@@ -1,0 +1,1468 @@
+{
+    "experimentParameters": {
+        "id": "VzvLMXlU",
+        "revision": 444,
+        "execDuration": 3605,
+        "logDir": "C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU",
+        "nextSequenceId": 82,
+        "params": {
+            "authorName": "default",
+            "experimentName": "elmo_random_forest",
+            "trialConcurrency": 1,
+            "maxExecDuration": 3600,
+            "maxTrialNum": 100,
+            "searchSpace": {
+                "estimator__C": {
+                    "_type": "loguniform",
+                    "_value": [
+                        0.00001,
+                        100000
+                    ]
+                },
+                "estimator__penalty": {
+                    "_type": "choice",
+                    "_value": [
+                        "l1",
+                        "l2"
+                    ]
+                }
+            },
+            "trainingServicePlatform": "local",
+            "tuner": {
+                "builtinTunerName": "TPE",
+                "classArgs": {
+                    "optimize_mode": "maximize"
+                },
+                "checkpointDir": "C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\checkpoint"
+            },
+            "versionCheck": true,
+            "clusterMetaData": [
+                {
+                    "key": "codeDir",
+                    "value": "C:\\Users\\soobt\\Documents\\Python Scripts\\Elmo Logistic Regression\\."
+                },
+                {
+                    "key": "command",
+                    "value": "C:\\Users\\soobt\\.virtualenvs\\Python_Scripts-mmjP8m20\\Scripts\\python.exe main.py"
+                }
+            ]
+        },
+        "startTime": 1584061114469,
+        "endTime": 1584064889767
+    },
+    "trialMessage": [
+        {
+            "id": "jRZ9a",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":0,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.14898843585218371,\"estimator__penalty\":\"l2\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\jRZ9a",
+            "startTime": 1584061125178,
+            "sequenceId": 0,
+            "endTime": 1584061197367,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584061197048,
+                    "trialJobId": "jRZ9a",
+                    "parameterId": "0",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8781677664179396\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584061197048,
+                    "trialJobId": "jRZ9a",
+                    "parameterId": "0",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8781677664179396\""
+                }
+            ]
+        },
+        {
+            "id": "wfucI",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":1,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":1.4917364615476811,\"estimator__penalty\":\"l2\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\wfucI",
+            "startTime": 1584061206359,
+            "sequenceId": 1,
+            "endTime": 1584061290580,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584061289258,
+                    "trialJobId": "wfucI",
+                    "parameterId": "1",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8777727168042713\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584061289258,
+                    "trialJobId": "wfucI",
+                    "parameterId": "1",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8777727168042713\""
+                }
+            ]
+        },
+        {
+            "id": "xrg5s",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":2,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":4851.844710515103,\"estimator__penalty\":\"l2\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\xrg5s",
+            "startTime": 1584061298292,
+            "sequenceId": 2,
+            "endTime": 1584061380716,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584061379391,
+                    "trialJobId": "xrg5s",
+                    "parameterId": "2",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8774966719290546\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584061379391,
+                    "trialJobId": "xrg5s",
+                    "parameterId": "2",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8774966719290546\""
+                }
+            ]
+        },
+        {
+            "id": "uizoa",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":3,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.0032204192127486503,\"estimator__penalty\":\"l2\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\uizoa",
+            "startTime": 1584061394627,
+            "sequenceId": 3,
+            "endTime": 1584061444027,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584061443705,
+                    "trialJobId": "uizoa",
+                    "parameterId": "3",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8616506854374443\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584061443705,
+                    "trialJobId": "uizoa",
+                    "parameterId": "3",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8616506854374443\""
+                }
+            ]
+        },
+        {
+            "id": "RoEHA",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":4,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.03360741201244516,\"estimator__penalty\":\"l2\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\RoEHA",
+            "startTime": 1584061455719,
+            "sequenceId": 4,
+            "endTime": 1584061520845,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584061519531,
+                    "trialJobId": "RoEHA",
+                    "parameterId": "4",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8761397049888338\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584061519531,
+                    "trialJobId": "RoEHA",
+                    "parameterId": "4",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8761397049888338\""
+                }
+            ]
+        },
+        {
+            "id": "zaVgv",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":5,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.008090179851827606,\"estimator__penalty\":\"l2\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\zaVgv",
+            "startTime": 1584061531489,
+            "sequenceId": 5,
+            "endTime": 1584061589102,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584061588736,
+                    "trialJobId": "zaVgv",
+                    "parameterId": "5",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8689491944889595\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584061588736,
+                    "trialJobId": "zaVgv",
+                    "parameterId": "5",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8689491944889595\""
+                }
+            ]
+        },
+        {
+            "id": "Q2czD",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":6,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":26.620065199975254,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\Q2czD",
+            "startTime": 1584061597214,
+            "sequenceId": 6,
+            "endTime": 1584061625649,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\Q2czD\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "bGXsG",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":7,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.4568752072568212,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\bGXsG",
+            "startTime": 1584061638182,
+            "sequenceId": 7,
+            "endTime": 1584061663809,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\bGXsG\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "rQ6vM",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":8,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":35887.85579162692,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\rQ6vM",
+            "startTime": 1584061673909,
+            "sequenceId": 8,
+            "endTime": 1584061698179,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\rQ6vM\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "TLdil",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":9,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.20963695930774465,\"estimator__penalty\":\"l2\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\TLdil",
+            "startTime": 1584061709803,
+            "sequenceId": 9,
+            "endTime": 1584061787420,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584061787106,
+                    "trialJobId": "TLdil",
+                    "parameterId": "9",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8782022829990592\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584061787106,
+                    "trialJobId": "TLdil",
+                    "parameterId": "9",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8782022829990592\""
+                }
+            ]
+        },
+        {
+            "id": "xdVwN",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":10,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00004551066756656397,\"estimator__penalty\":\"l2\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\xdVwN",
+            "startTime": 1584061796061,
+            "sequenceId": 10,
+            "endTime": 1584061842497,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584061842179,
+                    "trialJobId": "xdVwN",
+                    "parameterId": "10",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8382450955516972\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584061842179,
+                    "trialJobId": "xdVwN",
+                    "parameterId": "10",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8382450955516972\""
+                }
+            ]
+        },
+        {
+            "id": "Lockt",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":11,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.0022602684675309924,\"estimator__penalty\":\"l2\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\Lockt",
+            "startTime": 1584061857121,
+            "sequenceId": 11,
+            "endTime": 1584061905546,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584061904228,
+                    "trialJobId": "Lockt",
+                    "parameterId": "11",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.858644031988019\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584061904228,
+                    "trialJobId": "Lockt",
+                    "parameterId": "11",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.858644031988019\""
+                }
+            ]
+        },
+        {
+            "id": "GwaqH",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":12,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.34881045399436755,\"estimator__penalty\":\"l2\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\GwaqH",
+            "startTime": 1584061913049,
+            "sequenceId": 12,
+            "endTime": 1584061987412,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584061987105,
+                    "trialJobId": "GwaqH",
+                    "parameterId": "12",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8781347431828134\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584061987105,
+                    "trialJobId": "GwaqH",
+                    "parameterId": "12",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8781347431828134\""
+                }
+            ]
+        },
+        {
+            "id": "wB9Ge",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":13,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":1979.7297325287882,\"estimator__penalty\":\"l2\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\wB9Ge",
+            "startTime": 1584061999281,
+            "sequenceId": 13,
+            "endTime": 1584062077333,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584062076976,
+                    "trialJobId": "wB9Ge",
+                    "parameterId": "13",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8774966167925714\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584062076976,
+                    "trialJobId": "wB9Ge",
+                    "parameterId": "13",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8774966167925714\""
+                }
+            ]
+        },
+        {
+            "id": "swYKc",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":14,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":27.321510583212625,\"estimator__penalty\":\"l2\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\swYKc",
+            "startTime": 1584062090430,
+            "sequenceId": 14,
+            "endTime": 1584062175066,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584062174750,
+                    "trialJobId": "swYKc",
+                    "parameterId": "14",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8775194118036289\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584062174750,
+                    "trialJobId": "swYKc",
+                    "parameterId": "14",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8775194118036289\""
+                }
+            ]
+        },
+        {
+            "id": "zOuwb",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":15,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":10059.968663530693,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\zOuwb",
+            "startTime": 1584062181489,
+            "sequenceId": 15,
+            "endTime": 1584062206593,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\zOuwb\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "WNvc7",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":16,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":51259.24938115521,\"estimator__penalty\":\"l2\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\WNvc7",
+            "startTime": 1584062217639,
+            "sequenceId": 16,
+            "endTime": 1584062296007,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584062295453,
+                    "trialJobId": "WNvc7",
+                    "parameterId": "16",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8774966525045412\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584062295453,
+                    "trialJobId": "WNvc7",
+                    "parameterId": "16",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8774966525045412\""
+                }
+            ]
+        },
+        {
+            "id": "ldgjB",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":17,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":50528.380959432834,\"estimator__penalty\":\"l2\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\ldgjB",
+            "startTime": 1584062303884,
+            "sequenceId": 17,
+            "endTime": 1584062384987,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584062383665,
+                    "trialJobId": "ldgjB",
+                    "parameterId": "17",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8774966052869031\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584062383665,
+                    "trialJobId": "ldgjB",
+                    "parameterId": "17",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8774966052869031\""
+                }
+            ]
+        },
+        {
+            "id": "Sxq7z",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":18,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":978.7024515618034,\"estimator__penalty\":\"l2\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\Sxq7z",
+            "startTime": 1584062395589,
+            "sequenceId": 18,
+            "endTime": 1584062476720,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584062475389,
+                    "trialJobId": "Sxq7z",
+                    "parameterId": "18",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8774962683453698\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584062475389,
+                    "trialJobId": "Sxq7z",
+                    "parameterId": "18",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8774962683453698\""
+                }
+            ]
+        },
+        {
+            "id": "zxuIT",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":19,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.29678371785418767,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\zxuIT",
+            "startTime": 1584062486951,
+            "sequenceId": 19,
+            "endTime": 1584062511335,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\zxuIT\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "uHrRH",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":20,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":3575.6047632576065,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\uHrRH",
+            "startTime": 1584062522612,
+            "sequenceId": 20,
+            "endTime": 1584062547881,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\uHrRH\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "mHA9l",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":21,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.0543651961283267,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\mHA9l",
+            "startTime": 1584062558555,
+            "sequenceId": 21,
+            "endTime": 1584062582444,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\mHA9l\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "wBUJl",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":22,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":3.2190688929597475,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\wBUJl",
+            "startTime": 1584062594228,
+            "sequenceId": 22,
+            "endTime": 1584062619600,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\wBUJl\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "V9HEa",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":23,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":7.04233645122185,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\V9HEa",
+            "startTime": 1584062630022,
+            "sequenceId": 23,
+            "endTime": 1584062655556,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\V9HEa\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "gzEqV",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":24,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.000048852363038113866,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "startTime": 1584062665672,
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\gzEqV",
+            "sequenceId": 24,
+            "endTime": 1584062690618,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\gzEqV\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "KKo6L",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":25,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.15908559862987937,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\KKo6L",
+            "startTime": 1584062701374,
+            "sequenceId": 25,
+            "endTime": 1584062725194,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\KKo6L\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "bTVkk",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":26,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.14088134225862842,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\bTVkk",
+            "startTime": 1584062737059,
+            "sequenceId": 26,
+            "endTime": 1584062761404,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\bTVkk\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "IwpUh",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":27,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":2.0515093975713903,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\IwpUh",
+            "startTime": 1584062772740,
+            "sequenceId": 27,
+            "endTime": 1584062797694,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\IwpUh\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "rOyPf",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":28,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":26540.163236171597,\"estimator__penalty\":\"l2\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\rOyPf",
+            "startTime": 1584062808407,
+            "sequenceId": 28,
+            "endTime": 1584062887576,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584062886267,
+                    "trialJobId": "rOyPf",
+                    "parameterId": "28",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8774959023132617\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584062886267,
+                    "trialJobId": "rOyPf",
+                    "parameterId": "28",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8774959023132617\""
+                }
+            ]
+        },
+        {
+            "id": "YDK6Z",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":29,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":59.649983068588305,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\YDK6Z",
+            "startTime": 1584062899505,
+            "sequenceId": 29,
+            "endTime": 1584062923447,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\YDK6Z\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "KKbwp",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":30,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":303.46084684622843,\"estimator__penalty\":\"l2\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\KKbwp",
+            "startTime": 1584062935203,
+            "sequenceId": 30,
+            "endTime": 1584063016272,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584063015937,
+                    "trialJobId": "KKbwp",
+                    "parameterId": "30",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8774990746158685\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584063015937,
+                    "trialJobId": "KKbwp",
+                    "parameterId": "30",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8774990746158685\""
+                }
+            ]
+        },
+        {
+            "id": "kzsoZ",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":31,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.02437049344446297,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\kzsoZ",
+            "startTime": 1584063026788,
+            "sequenceId": 31,
+            "endTime": 1584063052651,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\kzsoZ\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "aiMTB",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":32,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.002167470313210253,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\aiMTB",
+            "startTime": 1584063062678,
+            "sequenceId": 32,
+            "endTime": 1584063087376,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\aiMTB\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "d8gts",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":33,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.017555215437559613,\"estimator__penalty\":\"l2\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\d8gts",
+            "startTime": 1584063098726,
+            "sequenceId": 33,
+            "endTime": 1584063158802,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584063157652,
+                    "trialJobId": "d8gts",
+                    "parameterId": "33",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8736127580964855\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584063157652,
+                    "trialJobId": "d8gts",
+                    "parameterId": "33",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8736127580964855\""
+                }
+            ]
+        },
+        {
+            "id": "tv8cT",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":34,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00011532515827831786,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\tv8cT",
+            "startTime": 1584063169628,
+            "sequenceId": 34,
+            "endTime": 1584063194402,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\tv8cT\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "cUcwt",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":35,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":5011.090078531596,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\cUcwt",
+            "startTime": 1584063205486,
+            "sequenceId": 35,
+            "endTime": 1584063230478,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\cUcwt\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "gpChn",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":36,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.0027548343039075565,\"estimator__penalty\":\"l2\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\gpChn",
+            "startTime": 1584063241272,
+            "sequenceId": 36,
+            "endTime": 1584063292609,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584063291272,
+                    "trialJobId": "gpChn",
+                    "parameterId": "36",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8603286532727612\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584063291272,
+                    "trialJobId": "gpChn",
+                    "parameterId": "36",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8603286532727612\""
+                }
+            ]
+        },
+        {
+            "id": "X5G4o",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":37,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.0003551713806299589,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\X5G4o",
+            "startTime": 1584063302611,
+            "sequenceId": 37,
+            "endTime": 1584063328632,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\X5G4o\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "Qtnlv",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":38,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":7.729148734405674,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\Qtnlv",
+            "startTime": 1584063338819,
+            "sequenceId": 38,
+            "endTime": 1584063362132,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\Qtnlv\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "LyAwZ",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":39,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.0016409140961752792,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\LyAwZ",
+            "startTime": 1584063374520,
+            "sequenceId": 39,
+            "endTime": 1584063398416,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\LyAwZ\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "ydpMU",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":40,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.4985758070594432,\"estimator__penalty\":\"l2\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\ydpMU",
+            "startTime": 1584063405238,
+            "sequenceId": 40,
+            "endTime": 1584063479890,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584063478550,
+                    "trialJobId": "ydpMU",
+                    "parameterId": "40",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8780490150042101\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584063478550,
+                    "trialJobId": "ydpMU",
+                    "parameterId": "40",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8780490150042101\""
+                }
+            ]
+        },
+        {
+            "id": "xnuV3",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":41,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.000037933625740363304,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\xnuV3",
+            "startTime": 1584063491237,
+            "sequenceId": 41,
+            "endTime": 1584063515977,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\xnuV3\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "c711z",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":42,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00008929938397179792,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\c711z",
+            "startTime": 1584063526939,
+            "sequenceId": 42,
+            "endTime": 1584063551742,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\c711z\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "QfK6a",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":43,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":13.345679386251225,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\QfK6a",
+            "startTime": 1584063562601,
+            "sequenceId": 43,
+            "endTime": 1584063587965,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\QfK6a\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "EN99o",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":44,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00004220995501904181,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\EN99o",
+            "startTime": 1584063598281,
+            "sequenceId": 44,
+            "endTime": 1584063623563,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\EN99o\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "RZhXJ",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":45,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":11.648530264361035,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\RZhXJ",
+            "startTime": 1584063633968,
+            "sequenceId": 45,
+            "endTime": 1584063658478,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\RZhXJ\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "iMRce",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":46,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.0000733530698279135,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\iMRce",
+            "startTime": 1584063669670,
+            "sequenceId": 46,
+            "endTime": 1584063694218,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\iMRce\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "x02fw",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":47,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00006920017998787068,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\x02fw",
+            "startTime": 1584063705374,
+            "sequenceId": 47,
+            "endTime": 1584063730925,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\x02fw\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "WXFOX",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":48,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00007792079047830381,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\WXFOX",
+            "startTime": 1584063736097,
+            "sequenceId": 48,
+            "endTime": 1584063761722,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\WXFOX\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "mEjFw",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":49,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.0001040655928570047,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\mEjFw",
+            "startTime": 1584063772167,
+            "sequenceId": 49,
+            "endTime": 1584063796037,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\mEjFw\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "dEqat",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":50,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00006820208397870072,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\dEqat",
+            "startTime": 1584063808082,
+            "sequenceId": 50,
+            "endTime": 1584063833821,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\dEqat\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "rhMac",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":51,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00018665471366379884,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\rhMac",
+            "startTime": 1584063843752,
+            "sequenceId": 51,
+            "endTime": 1584063868691,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\rhMac\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "vUOoY",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":52,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.0000807255836417449,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\vUOoY",
+            "startTime": 1584063874423,
+            "sequenceId": 52,
+            "endTime": 1584063899735,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\vUOoY\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "hk1KS",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":53,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00008484047026453633,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\hk1KS",
+            "startTime": 1584063910666,
+            "sequenceId": 53,
+            "endTime": 1584063934323,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\hk1KS\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "vIU8G",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":54,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00021168432209362243,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\vIU8G",
+            "startTime": 1584063946385,
+            "sequenceId": 54,
+            "endTime": 1584063970298,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\vIU8G\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "uqD3b",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":55,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00012909193211897954,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\uqD3b",
+            "startTime": 1584063982214,
+            "sequenceId": 55,
+            "endTime": 1584064006164,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\uqD3b\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "xwEdd",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":56,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00007537779996198253,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\xwEdd",
+            "startTime": 1584064017891,
+            "sequenceId": 56,
+            "endTime": 1584064042897,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\xwEdd\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "ca8iF",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":57,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00018994915782275708,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\ca8iF",
+            "startTime": 1584064053581,
+            "sequenceId": 57,
+            "endTime": 1584064077850,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\ca8iF\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "XHers",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":58,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00009998938993331279,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\XHers",
+            "startTime": 1584064089262,
+            "sequenceId": 58,
+            "endTime": 1584064113883,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\XHers\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "ih5aS",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":59,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00004084690337764573,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\ih5aS",
+            "startTime": 1584064124957,
+            "sequenceId": 59,
+            "endTime": 1584064149695,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\ih5aS\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "jE5BQ",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":60,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00013776038595633935,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\jE5BQ",
+            "startTime": 1584064160671,
+            "sequenceId": 60,
+            "endTime": 1584064185252,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\jE5BQ\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "Lvzn8",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":61,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00005179581455698837,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\Lvzn8",
+            "startTime": 1584064196711,
+            "sequenceId": 61,
+            "endTime": 1584064221345,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\Lvzn8\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "eyyLL",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":62,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.000020464552374859116,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\eyyLL",
+            "startTime": 1584064237381,
+            "sequenceId": 62,
+            "endTime": 1584064262330,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\eyyLL\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "emEv1",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":63,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00003462719030319907,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\emEv1",
+            "startTime": 1584064273083,
+            "sequenceId": 63,
+            "endTime": 1584064297366,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\emEv1\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "mTznk",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":64,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00006123901371326876,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\mTznk",
+            "startTime": 1584064304070,
+            "sequenceId": 64,
+            "endTime": 1584064329114,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\mTznk\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "n60Zh",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":65,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00006666059789312146,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\n60Zh",
+            "startTime": 1584064340230,
+            "sequenceId": 65,
+            "endTime": 1584064365719,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\n60Zh\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "XBm8F",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":66,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00006220439068110435,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\XBm8F",
+            "startTime": 1584064375955,
+            "sequenceId": 66,
+            "endTime": 1584064401537,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\XBm8F\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "zaaHX",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":67,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00008130171723889885,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\zaaHX",
+            "startTime": 1584064411643,
+            "sequenceId": 67,
+            "endTime": 1584064436011,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\zaaHX\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "E9xlU",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":68,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00008384362693258944,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\E9xlU",
+            "startTime": 1584064447593,
+            "sequenceId": 68,
+            "endTime": 1584064471389,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\E9xlU\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "HVQVd",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":69,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00021735406757561482,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\HVQVd",
+            "startTime": 1584064483463,
+            "sequenceId": 69,
+            "endTime": 1584064508517,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\HVQVd\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "jKNNc",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":70,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00003568550121000486,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\jKNNc",
+            "startTime": 1584064520075,
+            "sequenceId": 70,
+            "endTime": 1584064544107,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\jKNNc\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "opYjk",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":71,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00015366013235740766,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\opYjk",
+            "startTime": 1584064555793,
+            "sequenceId": 71,
+            "endTime": 1584064580038,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\opYjk\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "E2Ae7",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":72,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":9.408795028859476,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\E2Ae7",
+            "startTime": 1584064586461,
+            "sequenceId": 72,
+            "endTime": 1584064611779,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\E2Ae7\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "XM7oZ",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":73,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00010476222483887401,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\XM7oZ",
+            "startTime": 1584064622699,
+            "sequenceId": 73,
+            "endTime": 1584064646127,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\XM7oZ\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "JF8X9",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":74,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":12.545867877387872,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\JF8X9",
+            "startTime": 1584064658585,
+            "sequenceId": 74,
+            "endTime": 1584064682888,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\JF8X9\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "E2auU",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":75,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":9.969781462657402,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\E2auU",
+            "startTime": 1584064694255,
+            "sequenceId": 75,
+            "endTime": 1584064718140,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\E2auU\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "mWsDV",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":76,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00012920208120681428,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\mWsDV",
+            "startTime": 1584064724941,
+            "sequenceId": 76,
+            "endTime": 1584064749281,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\mWsDV\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "O5cVe",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":77,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00012210260888363084,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\O5cVe",
+            "startTime": 1584064760793,
+            "sequenceId": 77,
+            "endTime": 1584064786642,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\O5cVe\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "WRt3m",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":78,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.000037097260120257474,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\WRt3m",
+            "startTime": 1584064796580,
+            "sequenceId": 78,
+            "endTime": 1584064821500,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\WRt3m\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "x6oMI",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":79,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.000043874973419581405,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\x6oMI",
+            "startTime": 1584064832260,
+            "sequenceId": 79,
+            "endTime": 1584064856381,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\x6oMI\\stderr",
+            "intermediate": []
+        },
+        {
+            "id": "WQHYe",
+            "status": "FAILED",
+            "hyperParameters": [
+                "{\"parameter_id\":80,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__C\":0.00007182802766063343,\"estimator__penalty\":\"l1\"},\"parameter_index\":0}"
+            ],
+            "startTime": 1584064863338,
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\WQHYe",
+            "sequenceId": 80,
+            "endTime": 1584064888821,
+            "stderrPath": "file:\\localhost:C:\\Users\\soobt\\nni\\experiments\\VzvLMXlU\\trials\\WQHYe\\stderr",
+            "intermediate": []
+        }
+    ]
+}

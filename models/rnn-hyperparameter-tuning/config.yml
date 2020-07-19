@@ -1,0 +1,39 @@
+authorName: default
+experimentName: rnn_hyperparameters
+trialConcurrency: 1
+maxExecDuration: 15h
+maxTrialNum: 9999
+#logLevel: error
+#choice: local, remote
+trainingServicePlatform: local
+searchSpacePath: search_space.json
+#choice: true, false
+useAnnotation: false
+tuner:
+  #choice: TPE, Random, Anneal, Evolution, BatchTuner, MetisTuner
+  builtinTunerName: TPE
+  classArgs:
+    #choice: maximize, minimize
+    optimize_mode: maximize
+assessor:
+    builtinAssessorName: Medianstop
+    classArgs:
+      optimize_mode: maximize
+      start_step: 5
+#advisor:
+#  builtinAdvisorName: BOHB
+#  classArgs:
+#    optimize_mode: maximize
+#    min_budget: 1
+#    max_budget: 27
+#    eta: 3
+#    min_points_in_model: 7
+#    top_n_percent: 15
+#    num_samples: 64
+#    random_fraction: 0.33
+#    bandwidth_factor: 3.0
+#    min_bandwidth: 0.001
+trial:
+  command: C:\Users\soobt\.virtualenvs\Python_Pytorch_Scripts-G6iX8ch2\Scripts\python.exe train.py
+  codeDir: .
+  gpuNum: 1

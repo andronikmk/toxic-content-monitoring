@@ -1,0 +1,438 @@
+{
+    "experimentParameters": {
+        "id": "wdHDwNKj",
+        "revision": 374,
+        "execDuration": 3602,
+        "logDir": "C:\\Users\\soobt\\nni\\experiments\\wdHDwNKj",
+        "nextSequenceId": 12,
+        "params": {
+            "authorName": "default",
+            "experimentName": "elmo_random_forest",
+            "trialConcurrency": 1,
+            "maxExecDuration": 3600,
+            "maxTrialNum": 100,
+            "searchSpace": {
+                "estimator__max_depth": {
+                    "_type": "randint",
+                    "_value": [
+                        2,
+                        15
+                    ]
+                },
+                "estimator__n_estimators": {
+                    "_type": "randint",
+                    "_value": [
+                        10,
+                        500
+                    ]
+                },
+                "estimator__max_features": {
+                    "_type": "choice",
+                    "_value": [
+                        "log2",
+                        "sqrt"
+                    ]
+                },
+                "estimator__criterion": {
+                    "_type": "choice",
+                    "_value": [
+                        "gini",
+                        "entropy"
+                    ]
+                },
+                "estimator__bootstrap": {
+                    "_type": "choice",
+                    "_value": [
+                        true,
+                        false
+                    ]
+                },
+                "estimator__min_samples_leaf": {
+                    "_type": "choice",
+                    "_value": [
+                        1,
+                        2,
+                        4,
+                        8,
+                        16,
+                        32,
+                        64
+                    ]
+                },
+                "estimator__min_samples_split": {
+                    "_type": "choice",
+                    "_value": [
+                        8,
+                        16,
+                        32,
+                        64
+                    ]
+                }
+            },
+            "trainingServicePlatform": "local",
+            "tuner": {
+                "builtinTunerName": "TPE",
+                "classArgs": {
+                    "optimize_mode": "maximize"
+                },
+                "checkpointDir": "C:\\Users\\soobt\\nni\\experiments\\wdHDwNKj\\checkpoint"
+            },
+            "versionCheck": true,
+            "clusterMetaData": [
+                {
+                    "key": "codeDir",
+                    "value": "C:\\Users\\soobt\\Documents\\Python Scripts\\Elmo Random Forests\\."
+                },
+                {
+                    "key": "command",
+                    "value": "C:\\Users\\soobt\\.virtualenvs\\Python_Scripts-mmjP8m20\\Scripts\\python.exe main.py"
+                }
+            ]
+        },
+        "startTime": 1584065043772,
+        "endTime": 1584071583820
+    },
+    "trialMessage": [
+        {
+            "id": "kWEd3",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":0,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":9,\"estimator__n_estimators\":184,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":32,\"estimator__min_samples_split\":8},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\wdHDwNKj\\trials\\kWEd3",
+            "startTime": 1584065054565,
+            "sequenceId": 0,
+            "endTime": 1584065563455,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584065563098,
+                    "trialJobId": "kWEd3",
+                    "parameterId": "0",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8437157173894904\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584065563098,
+                    "trialJobId": "kWEd3",
+                    "parameterId": "0",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8437157173894904\""
+                }
+            ]
+        },
+        {
+            "id": "hIdvn",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":1,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":4,\"estimator__n_estimators\":125,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":32},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\wdHDwNKj\\trials\\hIdvn",
+            "startTime": 1584065578209,
+            "sequenceId": 1,
+            "endTime": 1584065721708,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584065720374,
+                    "trialJobId": "hIdvn",
+                    "parameterId": "1",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8157063385446865\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584065720374,
+                    "trialJobId": "hIdvn",
+                    "parameterId": "1",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8157063385446865\""
+                }
+            ]
+        },
+        {
+            "id": "cO16f",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":2,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":13,\"estimator__n_estimators\":373,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":1,\"estimator__min_samples_split\":8},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\wdHDwNKj\\trials\\cO16f",
+            "startTime": 1584065735341,
+            "sequenceId": 2,
+            "endTime": 1584066723258,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584066723057,
+                    "trialJobId": "cO16f",
+                    "parameterId": "2",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.822750202615127\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584066723057,
+                    "trialJobId": "cO16f",
+                    "parameterId": "2",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.822750202615127\""
+                }
+            ]
+        },
+        {
+            "id": "VI53W",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":3,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":11,\"estimator__n_estimators\":13,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":8},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\wdHDwNKj\\trials\\VI53W",
+            "startTime": 1584066737893,
+            "sequenceId": 3,
+            "endTime": 1584066808593,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584066807256,
+                    "trialJobId": "VI53W",
+                    "parameterId": "3",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8072883928890885\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584066807256,
+                    "trialJobId": "VI53W",
+                    "parameterId": "3",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8072883928890885\""
+                }
+            ]
+        },
+        {
+            "id": "mo39u",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":4,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":13,\"estimator__n_estimators\":452,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":64,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\wdHDwNKj\\trials\\mo39u",
+            "startTime": 1584066819375,
+            "sequenceId": 4,
+            "endTime": 1584068118358,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584068117953,
+                    "trialJobId": "mo39u",
+                    "parameterId": "4",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8565914061094317\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584068117953,
+                    "trialJobId": "mo39u",
+                    "parameterId": "4",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8565914061094317\""
+                }
+            ]
+        },
+        {
+            "id": "MjJ3q",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":5,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":8,\"estimator__n_estimators\":415,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":1,\"estimator__min_samples_split\":8},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\wdHDwNKj\\trials\\MjJ3q",
+            "startTime": 1584068132745,
+            "sequenceId": 5,
+            "endTime": 1584069164468,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584069164104,
+                    "trialJobId": "MjJ3q",
+                    "parameterId": "5",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8420615865463078\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584069164104,
+                    "trialJobId": "MjJ3q",
+                    "parameterId": "5",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8420615865463078\""
+                }
+            ]
+        },
+        {
+            "id": "v4XSW",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":6,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":6,\"estimator__n_estimators\":137,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":4,\"estimator__min_samples_split\":32},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\wdHDwNKj\\trials\\v4XSW",
+            "startTime": 1584069177761,
+            "sequenceId": 6,
+            "endTime": 1584069613860,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584069612490,
+                    "trialJobId": "v4XSW",
+                    "parameterId": "6",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8273886994776997\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584069612490,
+                    "trialJobId": "v4XSW",
+                    "parameterId": "6",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8273886994776997\""
+                }
+            ]
+        },
+        {
+            "id": "l6vjC",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":7,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":7,\"estimator__n_estimators\":366,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":4,\"estimator__min_samples_split\":8},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\wdHDwNKj\\trials\\l6vjC",
+            "startTime": 1584069627807,
+            "sequenceId": 7,
+            "endTime": 1584070022392,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584070022036,
+                    "trialJobId": "l6vjC",
+                    "parameterId": "7",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8257966726036648\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584070022036,
+                    "trialJobId": "l6vjC",
+                    "parameterId": "7",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8257966726036648\""
+                }
+            ]
+        },
+        {
+            "id": "SOfi6",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":8,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":5,\"estimator__n_estimators\":458,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\wdHDwNKj\\trials\\SOfi6",
+            "startTime": 1584070033249,
+            "sequenceId": 8,
+            "endTime": 1584070801996,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584070800636,
+                    "trialJobId": "SOfi6",
+                    "parameterId": "8",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8159220416761914\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584070800636,
+                    "trialJobId": "SOfi6",
+                    "parameterId": "8",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8159220416761914\""
+                }
+            ]
+        },
+        {
+            "id": "D5aYQ",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":9,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":4,\"estimator__n_estimators\":67,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":64,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\wdHDwNKj\\trials\\D5aYQ",
+            "startTime": 1584070811692,
+            "sequenceId": 9,
+            "endTime": 1584070901762,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584070900412,
+                    "trialJobId": "D5aYQ",
+                    "parameterId": "9",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.81120124612195\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584070900412,
+                    "trialJobId": "D5aYQ",
+                    "parameterId": "9",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.81120124612195\""
+                }
+            ]
+        },
+        {
+            "id": "V4rW6",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":10,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":6,\"estimator__n_estimators\":330,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":2,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\wdHDwNKj\\trials\\V4rW6",
+            "startTime": 1584070915898,
+            "sequenceId": 10,
+            "endTime": 1584071583073,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584071582716,
+                    "trialJobId": "V4rW6",
+                    "parameterId": "10",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8336751387126236\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584071582716,
+                    "trialJobId": "V4rW6",
+                    "parameterId": "10",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8336751387126236\""
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "dropout_rate": {"_type":"uniform","_value":[0.1, 0.9]},
+    "hidden1Activation": {"_type":"choice","_value":["relu", "leaky_relu", "softmax", "selu", "tanh", "sigmoid", "elu"]},
+    "hidden2Activation": {"_type":"choice","_value":["relu", "leaky_relu", "softmax", "selu", "tanh", "sigmoid", "elu"]},
+    "learning_rate": {"_type":"loguniform","_value":[0.000001, 100]},
+    "amsgrad ": {"_type":"choice","_value":[true, false]},
+    "weight_decay ": {"_type":"loguniform","_value":[0.000001, 100]},
+    "weight_Q ": {"_type":"choice","_value":[true, false]}
+}

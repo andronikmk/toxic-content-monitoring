@@ -1,0 +1,2732 @@
+{
+    "experimentParameters": {
+        "id": "mkw74yXH",
+        "revision": 448,
+        "execDuration": 3605,
+        "logDir": "C:\\Users\\soobt\\nni\\experiments\\mkw74yXH",
+        "nextSequenceId": 86,
+        "params": {
+            "authorName": "default",
+            "experimentName": "elmo_random_forest",
+            "trialConcurrency": 1,
+            "maxExecDuration": 3600,
+            "maxTrialNum": 100,
+            "searchSpace": {
+                "estimator__max_depth": {
+                    "_type": "randint",
+                    "_value": [
+                        2,
+                        15
+                    ]
+                },
+                "estimator__n_estimators": {
+                    "_type": "randint",
+                    "_value": [
+                        10,
+                        500
+                    ]
+                },
+                "estimator__max_features": {
+                    "_type": "choice",
+                    "_value": [
+                        "log2",
+                        "sqrt"
+                    ]
+                },
+                "estimator__criterion": {
+                    "_type": "choice",
+                    "_value": [
+                        "gini",
+                        "entropy"
+                    ]
+                },
+                "estimator__bootstrap": {
+                    "_type": "choice",
+                    "_value": [
+                        true,
+                        false
+                    ]
+                },
+                "estimator__min_samples_leaf": {
+                    "_type": "choice",
+                    "_value": [
+                        1,
+                        2,
+                        4,
+                        8,
+                        16,
+                        32,
+                        64
+                    ]
+                },
+                "estimator__min_samples_split": {
+                    "_type": "choice",
+                    "_value": [
+                        8,
+                        16,
+                        32,
+                        64
+                    ]
+                }
+            },
+            "trainingServicePlatform": "local",
+            "tuner": {
+                "builtinTunerName": "TPE",
+                "classArgs": {
+                    "optimize_mode": "maximize"
+                },
+                "checkpointDir": "C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\checkpoint"
+            },
+            "versionCheck": true,
+            "clusterMetaData": [
+                {
+                    "key": "codeDir",
+                    "value": "C:\\Users\\soobt\\Documents\\Python Scripts\\Elmo Random Forests\\."
+                },
+                {
+                    "key": "command",
+                    "value": "C:\\Users\\soobt\\.virtualenvs\\Python_Scripts-mmjP8m20\\Scripts\\python.exe main.py"
+                }
+            ]
+        },
+        "startTime": 1584051900182,
+        "endTime": 1584056687545
+    },
+    "trialMessage": [
+        {
+            "id": "bDd6D",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":0,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":13,\"estimator__n_estimators\":232,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\bDd6D",
+            "startTime": 1584051911106,
+            "sequenceId": 0,
+            "endTime": 1584051971436,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584051971118,
+                    "trialJobId": "bDd6D",
+                    "parameterId": "0",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9681903920023515\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584051971118,
+                    "trialJobId": "bDd6D",
+                    "parameterId": "0",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9681903920023515\""
+                }
+            ]
+        },
+        {
+            "id": "X0eaP",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":1,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":9,\"estimator__n_estimators\":112,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":32,\"estimator__min_samples_split\":8},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\X0eaP",
+            "startTime": 1584051983215,
+            "sequenceId": 1,
+            "endTime": 1584052004573,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584052003240,
+                    "trialJobId": "X0eaP",
+                    "parameterId": "1",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9587626214730834\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584052003240,
+                    "trialJobId": "X0eaP",
+                    "parameterId": "1",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9587626214730834\""
+                }
+            ]
+        },
+        {
+            "id": "Sedld",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":2,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":6,\"estimator__n_estimators\":135,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":4,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\Sedld",
+            "startTime": 1584052014580,
+            "sequenceId": 2,
+            "endTime": 1584052028235,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584052027906,
+                    "trialJobId": "Sedld",
+                    "parameterId": "2",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8785913521117976\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584052027906,
+                    "trialJobId": "Sedld",
+                    "parameterId": "2",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8785913521117976\""
+                }
+            ]
+        },
+        {
+            "id": "PVXhT",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":3,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":5,\"estimator__n_estimators\":385,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":4,\"estimator__min_samples_split\":8},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\PVXhT",
+            "startTime": 1584052035413,
+            "sequenceId": 3,
+            "endTime": 1584052079241,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584052078893,
+                    "trialJobId": "PVXhT",
+                    "parameterId": "3",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9659102733287467\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584052078893,
+                    "trialJobId": "PVXhT",
+                    "parameterId": "3",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9659102733287467\""
+                }
+            ]
+        },
+        {
+            "id": "KT1Au",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":4,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":12,\"estimator__n_estimators\":376,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":32,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\KT1Au",
+            "startTime": 1584052090718,
+            "sequenceId": 4,
+            "endTime": 1584052180023,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584052179654,
+                    "trialJobId": "KT1Au",
+                    "parameterId": "4",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9663693397079381\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584052179654,
+                    "trialJobId": "KT1Au",
+                    "parameterId": "4",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9663693397079381\""
+                }
+            ]
+        },
+        {
+            "id": "OY05P",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":5,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":8,\"estimator__n_estimators\":327,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":4,\"estimator__min_samples_split\":8},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\OY05P",
+            "startTime": 1584052190837,
+            "sequenceId": 5,
+            "endTime": 1584052242023,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584052241674,
+                    "trialJobId": "OY05P",
+                    "parameterId": "5",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9675756960445113\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584052241674,
+                    "trialJobId": "OY05P",
+                    "parameterId": "5",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9675756960445113\""
+                }
+            ]
+        },
+        {
+            "id": "xTi9R",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":6,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":10,\"estimator__n_estimators\":408,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":8,\"estimator__min_samples_split\":8},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\xTi9R",
+            "startTime": 1584052254876,
+            "sequenceId": 6,
+            "endTime": 1584052288664,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584052287322,
+                    "trialJobId": "xTi9R",
+                    "parameterId": "6",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9443628085947924\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584052287322,
+                    "trialJobId": "xTi9R",
+                    "parameterId": "6",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9443628085947924\""
+                }
+            ]
+        },
+        {
+            "id": "mZQ1t",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":7,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":9,\"estimator__n_estimators\":166,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":8,\"estimator__min_samples_split\":8},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\mZQ1t",
+            "startTime": 1584052296293,
+            "sequenceId": 7,
+            "endTime": 1584052329411,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584052329076,
+                    "trialJobId": "mZQ1t",
+                    "parameterId": "7",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9600165244977292\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584052329076,
+                    "trialJobId": "mZQ1t",
+                    "parameterId": "7",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9600165244977292\""
+                }
+            ]
+        },
+        {
+            "id": "TISjN",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":8,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":14,\"estimator__n_estimators\":364,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":8,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\TISjN",
+            "startTime": 1584052338567,
+            "sequenceId": 8,
+            "endTime": 1584052429359,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584052429014,
+                    "trialJobId": "TISjN",
+                    "parameterId": "8",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9674833607623105\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584052429014,
+                    "trialJobId": "TISjN",
+                    "parameterId": "8",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9674833607623105\""
+                }
+            ]
+        },
+        {
+            "id": "FwLWr",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":9,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":11,\"estimator__n_estimators\":83,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":2,\"estimator__min_samples_split\":8},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\FwLWr",
+            "startTime": 1584052440154,
+            "sequenceId": 9,
+            "endTime": 1584052451186,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584052450828,
+                    "trialJobId": "FwLWr",
+                    "parameterId": "9",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8612322178278727\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584052450828,
+                    "trialJobId": "FwLWr",
+                    "parameterId": "9",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8612322178278727\""
+                }
+            ]
+        },
+        {
+            "id": "BiftH",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":10,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":8,\"estimator__n_estimators\":426,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":1,\"estimator__min_samples_split\":8},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\BiftH",
+            "startTime": 1584052465950,
+            "sequenceId": 10,
+            "endTime": 1584052495330,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584052494990,
+                    "trialJobId": "BiftH",
+                    "parameterId": "10",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9477798352997181\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584052494990,
+                    "trialJobId": "BiftH",
+                    "parameterId": "10",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9477798352997181\""
+                }
+            ]
+        },
+        {
+            "id": "QzAOe",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":11,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":12,\"estimator__n_estimators\":392,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":4,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\QzAOe",
+            "startTime": 1584052508005,
+            "sequenceId": 11,
+            "endTime": 1584052578290,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584052577967,
+                    "trialJobId": "QzAOe",
+                    "parameterId": "11",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9665878563541525\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584052577967,
+                    "trialJobId": "QzAOe",
+                    "parameterId": "11",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9665878563541525\""
+                }
+            ]
+        },
+        {
+            "id": "GSg59",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":12,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":14,\"estimator__n_estimators\":176,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":32,\"estimator__min_samples_split\":8},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\GSg59",
+            "startTime": 1584052585797,
+            "sequenceId": 12,
+            "endTime": 1584052603690,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584052602344,
+                    "trialJobId": "GSg59",
+                    "parameterId": "12",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9423353037773646\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584052602344,
+                    "trialJobId": "GSg59",
+                    "parameterId": "12",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9423353037773646\""
+                }
+            ]
+        },
+        {
+            "id": "SPCeg",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":13,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":2,\"estimator__n_estimators\":135,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":4,\"estimator__min_samples_split\":8},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\SPCeg",
+            "startTime": 1584052616545,
+            "sequenceId": 13,
+            "endTime": 1584052630065,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584052629720,
+                    "trialJobId": "SPCeg",
+                    "parameterId": "13",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9012212642742998\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584052629720,
+                    "trialJobId": "SPCeg",
+                    "parameterId": "13",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9012212642742998\""
+                }
+            ]
+        },
+        {
+            "id": "PTQ3l",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":14,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":12,\"estimator__n_estimators\":454,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":4,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\PTQ3l",
+            "startTime": 1584052642259,
+            "sequenceId": 14,
+            "endTime": 1584052720517,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584052719553,
+                    "trialJobId": "PTQ3l",
+                    "parameterId": "14",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9681265514657968\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584052719553,
+                    "trialJobId": "PTQ3l",
+                    "parameterId": "14",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9681265514657968\""
+                }
+            ]
+        },
+        {
+            "id": "zuteW",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":15,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":5,\"estimator__n_estimators\":130,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":64,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\zuteW",
+            "startTime": 1584052735221,
+            "sequenceId": 15,
+            "endTime": 1584052746101,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584052745755,
+                    "trialJobId": "zuteW",
+                    "parameterId": "15",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8394035413197899\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584052745755,
+                    "trialJobId": "zuteW",
+                    "parameterId": "15",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8394035413197899\""
+                }
+            ]
+        },
+        {
+            "id": "SY8YP",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":16,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":7,\"estimator__n_estimators\":483,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":64,\"estimator__min_samples_split\":32},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\SY8YP",
+            "startTime": 1584052755887,
+            "sequenceId": 16,
+            "endTime": 1584052815916,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584052814881,
+                    "trialJobId": "SY8YP",
+                    "parameterId": "16",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9611665964637623\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584052814881,
+                    "trialJobId": "SY8YP",
+                    "parameterId": "16",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9611665964637623\""
+                }
+            ]
+        },
+        {
+            "id": "RcgrR",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":17,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":14,\"estimator__n_estimators\":237,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":4,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\RcgrR",
+            "startTime": 1584052826861,
+            "sequenceId": 17,
+            "endTime": 1584052887504,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584052887170,
+                    "trialJobId": "RcgrR",
+                    "parameterId": "17",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9663236453596844\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584052887170,
+                    "trialJobId": "RcgrR",
+                    "parameterId": "17",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9663236453596844\""
+                }
+            ]
+        },
+        {
+            "id": "Bx6xm",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":18,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":2,\"estimator__n_estimators\":235,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\Bx6xm",
+            "startTime": 1584052903150,
+            "sequenceId": 18,
+            "endTime": 1584052923966,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584052923037,
+                    "trialJobId": "Bx6xm",
+                    "parameterId": "18",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.951130061608822\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584052923037,
+                    "trialJobId": "Bx6xm",
+                    "parameterId": "18",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.951130061608822\""
+                }
+            ]
+        },
+        {
+            "id": "v7fst",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":19,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":9,\"estimator__n_estimators\":175,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":4,\"estimator__min_samples_split\":32},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\v7fst",
+            "startTime": 1584052938963,
+            "sequenceId": 19,
+            "endTime": 1584052954667,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584052953310,
+                    "trialJobId": "v7fst",
+                    "parameterId": "19",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9065803069054703\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584052953310,
+                    "trialJobId": "v7fst",
+                    "parameterId": "19",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9065803069054703\""
+                }
+            ]
+        },
+        {
+            "id": "S1BKk",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":20,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":13,\"estimator__n_estimators\":305,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\S1BKk",
+            "startTime": 1584052965186,
+            "sequenceId": 20,
+            "endTime": 1584053044462,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584053044124,
+                    "trialJobId": "S1BKk",
+                    "parameterId": "20",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9682364692404833\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584053044124,
+                    "trialJobId": "S1BKk",
+                    "parameterId": "20",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9682364692404833\""
+                }
+            ]
+        },
+        {
+            "id": "cG2bM",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":21,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":13,\"estimator__n_estimators\":100,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\cG2bM",
+            "startTime": 1584053057369,
+            "sequenceId": 21,
+            "endTime": 1584053087837,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584053086469,
+                    "trialJobId": "cG2bM",
+                    "parameterId": "21",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9661504307454273\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584053086469,
+                    "trialJobId": "cG2bM",
+                    "parameterId": "21",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9661504307454273\""
+                }
+            ]
+        },
+        {
+            "id": "pu53A",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":22,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":9,\"estimator__n_estimators\":407,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":8},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\pu53A",
+            "startTime": 1584053102029,
+            "sequenceId": 22,
+            "endTime": 1584053130380,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584053130024,
+                    "trialJobId": "pu53A",
+                    "parameterId": "22",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9455317465919891\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584053130024,
+                    "trialJobId": "pu53A",
+                    "parameterId": "22",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9455317465919891\""
+                }
+            ]
+        },
+        {
+            "id": "SWKA2",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":23,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":13,\"estimator__n_estimators\":411,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\SWKA2",
+            "startTime": 1584053143644,
+            "sequenceId": 23,
+            "endTime": 1584053250878,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584053249482,
+                    "trialJobId": "SWKA2",
+                    "parameterId": "23",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9688341206216089\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584053249482,
+                    "trialJobId": "SWKA2",
+                    "parameterId": "23",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9688341206216089\""
+                }
+            ]
+        },
+        {
+            "id": "Paaft",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":24,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":13,\"estimator__n_estimators\":13,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\Paaft",
+            "startTime": 1584053258390,
+            "sequenceId": 24,
+            "endTime": 1584053267851,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584053266531,
+                    "trialJobId": "Paaft",
+                    "parameterId": "24",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9042174674110757\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584053266531,
+                    "trialJobId": "Paaft",
+                    "parameterId": "24",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9042174674110757\""
+                }
+            ]
+        },
+        {
+            "id": "omWMf",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":25,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":4,\"estimator__n_estimators\":353,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\omWMf",
+            "startTime": 1584053279067,
+            "sequenceId": 25,
+            "endTime": 1584053319611,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584053318280,
+                    "trialJobId": "omWMf",
+                    "parameterId": "25",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.964011295886384\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584053318280,
+                    "trialJobId": "omWMf",
+                    "parameterId": "25",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.964011295886384\""
+                }
+            ]
+        },
+        {
+            "id": "am9Td",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":26,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":3,\"estimator__n_estimators\":189,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":1,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\am9Td",
+            "startTime": 1584053328535,
+            "sequenceId": 26,
+            "endTime": 1584053350667,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584053349311,
+                    "trialJobId": "am9Td",
+                    "parameterId": "26",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9580749716377688\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584053349311,
+                    "trialJobId": "am9Td",
+                    "parameterId": "26",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9580749716377688\""
+                }
+            ]
+        },
+        {
+            "id": "Ja8R7",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":27,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":13,\"estimator__n_estimators\":410,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":2,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\Ja8R7",
+            "startTime": 1584053359818,
+            "sequenceId": 27,
+            "endTime": 1584053474271,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584053473906,
+                    "trialJobId": "Ja8R7",
+                    "parameterId": "27",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9685041602597373\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584053473906,
+                    "trialJobId": "Ja8R7",
+                    "parameterId": "27",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9685041602597373\""
+                }
+            ]
+        },
+        {
+            "id": "USIQU",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":28,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":13,\"estimator__n_estimators\":67,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":2,\"estimator__min_samples_split\":32},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\USIQU",
+            "startTime": 1584053485092,
+            "sequenceId": 28,
+            "endTime": 1584053508632,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584053507311,
+                    "trialJobId": "USIQU",
+                    "parameterId": "28",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9597859660968685\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584053507311,
+                    "trialJobId": "USIQU",
+                    "parameterId": "28",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9597859660968685\""
+                }
+            ]
+        },
+        {
+            "id": "dU5D4",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":29,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":13,\"estimator__n_estimators\":217,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":2,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\dU5D4",
+            "startTime": 1584053517489,
+            "sequenceId": 29,
+            "endTime": 1584053578953,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584053577619,
+                    "trialJobId": "dU5D4",
+                    "parameterId": "29",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9687739213642276\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584053577619,
+                    "trialJobId": "dU5D4",
+                    "parameterId": "29",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9687739213642276\""
+                }
+            ]
+        },
+        {
+            "id": "Ojzbu",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":30,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":11,\"estimator__n_estimators\":441,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":64,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\Ojzbu",
+            "startTime": 1584053590289,
+            "sequenceId": 30,
+            "endTime": 1584053686511,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584053686411,
+                    "trialJobId": "Ojzbu",
+                    "parameterId": "30",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.963706220035116\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584053686411,
+                    "trialJobId": "Ojzbu",
+                    "parameterId": "30",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.963706220035116\""
+                }
+            ]
+        },
+        {
+            "id": "zXhRG",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":31,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":4,\"estimator__n_estimators\":411,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":2,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\zXhRG",
+            "startTime": 1584053702085,
+            "sequenceId": 31,
+            "endTime": 1584053749479,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584053749137,
+                    "trialJobId": "zXhRG",
+                    "parameterId": "31",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9635854282661692\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584053749137,
+                    "trialJobId": "zXhRG",
+                    "parameterId": "31",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9635854282661692\""
+                }
+            ]
+        },
+        {
+            "id": "Ih3Zi",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":32,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":6,\"estimator__n_estimators\":317,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":2,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\Ih3Zi",
+            "startTime": 1584053757231,
+            "sequenceId": 32,
+            "endTime": 1584053805815,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584053804490,
+                    "trialJobId": "Ih3Zi",
+                    "parameterId": "32",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9650489453976\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584053804490,
+                    "trialJobId": "Ih3Zi",
+                    "parameterId": "32",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9650489453976\""
+                }
+            ]
+        },
+        {
+            "id": "L9CIx",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":33,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":7,\"estimator__n_estimators\":429,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":2,\"estimator__min_samples_split\":32},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\L9CIx",
+            "startTime": 1584053812902,
+            "sequenceId": 33,
+            "endTime": 1584053884738,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584053883603,
+                    "trialJobId": "L9CIx",
+                    "parameterId": "33",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9669449003455668\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584053883603,
+                    "trialJobId": "L9CIx",
+                    "parameterId": "33",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9669449003455668\""
+                }
+            ]
+        },
+        {
+            "id": "XJN0w",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":34,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":10,\"estimator__n_estimators\":154,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":32,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\XJN0w",
+            "startTime": 1584053899768,
+            "sequenceId": 34,
+            "endTime": 1584053942117,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584053941776,
+                    "trialJobId": "XJN0w",
+                    "parameterId": "34",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.964038246562788\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584053941776,
+                    "trialJobId": "XJN0w",
+                    "parameterId": "34",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.964038246562788\""
+                }
+            ]
+        },
+        {
+            "id": "Wk4zp",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":35,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":3,\"estimator__n_estimators\":120,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":1,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\Wk4zp",
+            "startTime": 1584053956121,
+            "sequenceId": 35,
+            "endTime": 1584053977952,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584053976615,
+                    "trialJobId": "Wk4zp",
+                    "parameterId": "35",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9456652052234983\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584053976615,
+                    "trialJobId": "Wk4zp",
+                    "parameterId": "35",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9456652052234983\""
+                }
+            ]
+        },
+        {
+            "id": "FJQti",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":36,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":13,\"estimator__n_estimators\":42,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":2,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\FJQti",
+            "startTime": 1584053988653,
+            "sequenceId": 36,
+            "endTime": 1584054010714,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054009357,
+                    "trialJobId": "FJQti",
+                    "parameterId": "36",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9585578792702988\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054009357,
+                    "trialJobId": "FJQti",
+                    "parameterId": "36",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9585578792702988\""
+                }
+            ]
+        },
+        {
+            "id": "kzllD",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":37,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":6,\"estimator__n_estimators\":152,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":8,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\kzllD",
+            "startTime": 1584054026531,
+            "sequenceId": 37,
+            "endTime": 1584054040634,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054039298,
+                    "trialJobId": "kzllD",
+                    "parameterId": "37",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8696901020157627\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054039298,
+                    "trialJobId": "kzllD",
+                    "parameterId": "37",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8696901020157627\""
+                }
+            ]
+        },
+        {
+            "id": "Cex4m",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":38,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":5,\"estimator__n_estimators\":74,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":32},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\Cex4m",
+            "startTime": 1584054053109,
+            "sequenceId": 38,
+            "endTime": 1584054066462,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054066129,
+                    "trialJobId": "Cex4m",
+                    "parameterId": "38",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9511286976436001\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054066129,
+                    "trialJobId": "Cex4m",
+                    "parameterId": "38",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9511286976436001\""
+                }
+            ]
+        },
+        {
+            "id": "kBvKD",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":39,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":13,\"estimator__n_estimators\":146,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":32,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\kBvKD",
+            "startTime": 1584054079495,
+            "sequenceId": 39,
+            "endTime": 1584054119373,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054119039,
+                    "trialJobId": "kBvKD",
+                    "parameterId": "39",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9656095158403565\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054119039,
+                    "trialJobId": "kBvKD",
+                    "parameterId": "39",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9656095158403565\""
+                }
+            ]
+        },
+        {
+            "id": "IImQq",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":40,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":8,\"estimator__n_estimators\":217,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":8,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\IImQq",
+            "startTime": 1584054131089,
+            "sequenceId": 40,
+            "endTime": 1584054148308,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054147965,
+                    "trialJobId": "IImQq",
+                    "parameterId": "40",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9213994474368522\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054147965,
+                    "trialJobId": "IImQq",
+                    "parameterId": "40",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9213994474368522\""
+                }
+            ]
+        },
+        {
+            "id": "Eiyk8",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":41,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":13,\"estimator__n_estimators\":306,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":1,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\Eiyk8",
+            "startTime": 1584054157467,
+            "sequenceId": 41,
+            "endTime": 1584054243874,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054242538,
+                    "trialJobId": "Eiyk8",
+                    "parameterId": "41",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9676727749408998\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054242538,
+                    "trialJobId": "Eiyk8",
+                    "parameterId": "41",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9676727749408998\""
+                }
+            ]
+        },
+        {
+            "id": "eidxL",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":42,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":10,\"estimator__n_estimators\":138,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":2,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\eidxL",
+            "startTime": 1584054256163,
+            "sequenceId": 42,
+            "endTime": 1584054289644,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054288311,
+                    "trialJobId": "eidxL",
+                    "parameterId": "42",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9644783046579714\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054288311,
+                    "trialJobId": "eidxL",
+                    "parameterId": "42",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9644783046579714\""
+                }
+            ]
+        },
+        {
+            "id": "dciA7",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":43,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":2,\"estimator__n_estimators\":118,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":64,\"estimator__min_samples_split\":32},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\dciA7",
+            "startTime": 1584054301784,
+            "sequenceId": 43,
+            "endTime": 1584054313045,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054312699,
+                    "trialJobId": "dciA7",
+                    "parameterId": "43",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.7465265398772208\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054312699,
+                    "trialJobId": "dciA7",
+                    "parameterId": "43",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.7465265398772208\""
+                }
+            ]
+        },
+        {
+            "id": "i27vu",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":44,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":11,\"estimator__n_estimators\":382,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\i27vu",
+            "startTime": 1584054322577,
+            "sequenceId": 44,
+            "endTime": 1584054409141,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054408792,
+                    "trialJobId": "i27vu",
+                    "parameterId": "44",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9687477953346549\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054408792,
+                    "trialJobId": "i27vu",
+                    "parameterId": "44",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9687477953346549\""
+                }
+            ]
+        },
+        {
+            "id": "EfrIT",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":45,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":8,\"estimator__n_estimators\":171,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":32,\"estimator__min_samples_split\":8},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\EfrIT",
+            "startTime": 1584054421360,
+            "sequenceId": 45,
+            "endTime": 1584054449073,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054448702,
+                    "trialJobId": "EfrIT",
+                    "parameterId": "45",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9620692310586719\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054448702,
+                    "trialJobId": "EfrIT",
+                    "parameterId": "45",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9620692310586719\""
+                }
+            ]
+        },
+        {
+            "id": "CQP0s",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":46,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":12,\"estimator__n_estimators\":102,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":8,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\CQP0s",
+            "startTime": 1584054464474,
+            "sequenceId": 46,
+            "endTime": 1584054475443,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054475441,
+                    "trialJobId": "CQP0s",
+                    "parameterId": "46",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.906045466161738\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054475441,
+                    "trialJobId": "CQP0s",
+                    "parameterId": "46",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.906045466161738\""
+                }
+            ]
+        },
+        {
+            "id": "Rtiep",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":47,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":7,\"estimator__n_estimators\":379,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":2,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\Rtiep",
+            "startTime": 1584054490512,
+            "sequenceId": 47,
+            "endTime": 1584054543016,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054542643,
+                    "trialJobId": "Rtiep",
+                    "parameterId": "47",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9671865864787427\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054542643,
+                    "trialJobId": "Rtiep",
+                    "parameterId": "47",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9671865864787427\""
+                }
+            ]
+        },
+        {
+            "id": "cqqUm",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":48,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":14,\"estimator__n_estimators\":44,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":8},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\cqqUm",
+            "startTime": 1584054553763,
+            "sequenceId": 48,
+            "endTime": 1584054569821,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054568499,
+                    "trialJobId": "cqqUm",
+                    "parameterId": "48",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.955067297835844\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054568499,
+                    "trialJobId": "cqqUm",
+                    "parameterId": "48",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.955067297835844\""
+                }
+            ]
+        },
+        {
+            "id": "bysXj",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":49,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":5,\"estimator__n_estimators\":301,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":1,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\bysXj",
+            "startTime": 1584054579609,
+            "sequenceId": 49,
+            "endTime": 1584054599245,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054598887,
+                    "trialJobId": "bysXj",
+                    "parameterId": "49",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9157816881122246\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054598887,
+                    "trialJobId": "bysXj",
+                    "parameterId": "49",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9157816881122246\""
+                }
+            ]
+        },
+        {
+            "id": "VF4OL",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":50,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":13,\"estimator__n_estimators\":141,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":64,\"estimator__min_samples_split\":32},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\VF4OL",
+            "startTime": 1584054610463,
+            "sequenceId": 50,
+            "endTime": 1584054640280,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054639944,
+                    "trialJobId": "VF4OL",
+                    "parameterId": "50",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9589477420131911\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054639944,
+                    "trialJobId": "VF4OL",
+                    "parameterId": "50",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9589477420131911\""
+                }
+            ]
+        },
+        {
+            "id": "XawXw",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":51,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":3,\"estimator__n_estimators\":80,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":2,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\XawXw",
+            "startTime": 1584054650161,
+            "sequenceId": 51,
+            "endTime": 1584054662290,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054661968,
+                    "trialJobId": "XawXw",
+                    "parameterId": "51",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9284927977134757\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054661968,
+                    "trialJobId": "XawXw",
+                    "parameterId": "51",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9284927977134757\""
+                }
+            ]
+        },
+        {
+            "id": "THJvU",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":52,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":4,\"estimator__n_estimators\":207,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":4,\"estimator__min_samples_split\":8},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\THJvU",
+            "startTime": 1584054671099,
+            "sequenceId": 52,
+            "endTime": 1584054695687,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054694589,
+                    "trialJobId": "THJvU",
+                    "parameterId": "52",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9521718357131584\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054694589,
+                    "trialJobId": "THJvU",
+                    "parameterId": "52",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9521718357131584\""
+                }
+            ]
+        },
+        {
+            "id": "NNJXt",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":53,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":9,\"estimator__n_estimators\":422,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\NNJXt",
+            "startTime": 1584054706954,
+            "sequenceId": 53,
+            "endTime": 1584054737060,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054736713,
+                    "trialJobId": "NNJXt",
+                    "parameterId": "53",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9494599268989656\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054736713,
+                    "trialJobId": "NNJXt",
+                    "parameterId": "53",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9494599268989656\""
+                }
+            ]
+        },
+        {
+            "id": "javd4",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":54,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":6,\"estimator__n_estimators\":479,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":32,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\javd4",
+            "startTime": 1584054745344,
+            "sequenceId": 54,
+            "endTime": 1584054813146,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054812774,
+                    "trialJobId": "javd4",
+                    "parameterId": "54",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9649402846057301\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054812774,
+                    "trialJobId": "javd4",
+                    "parameterId": "54",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9649402846057301\""
+                }
+            ]
+        },
+        {
+            "id": "li8eo",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":55,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":12,\"estimator__n_estimators\":59,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":8,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\li8eo",
+            "startTime": 1584054826684,
+            "sequenceId": 55,
+            "endTime": 1584054843408,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054842867,
+                    "trialJobId": "li8eo",
+                    "parameterId": "55",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9506148032216141\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054842867,
+                    "trialJobId": "li8eo",
+                    "parameterId": "55",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9506148032216141\""
+                }
+            ]
+        },
+        {
+            "id": "arK2x",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":56,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":13,\"estimator__n_estimators\":221,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":32},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\arK2x",
+            "startTime": 1584054852354,
+            "sequenceId": 56,
+            "endTime": 1584054899053,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054898681,
+                    "trialJobId": "arK2x",
+                    "parameterId": "56",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.967228123385412\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054898681,
+                    "trialJobId": "arK2x",
+                    "parameterId": "56",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.967228123385412\""
+                }
+            ]
+        },
+        {
+            "id": "OdkcN",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":57,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":2,\"estimator__n_estimators\":285,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":4,\"estimator__min_samples_split\":8},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\OdkcN",
+            "startTime": 1584054911746,
+            "sequenceId": 57,
+            "endTime": 1584054930998,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054929631,
+                    "trialJobId": "OdkcN",
+                    "parameterId": "57",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8530085132392532\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054929631,
+                    "trialJobId": "OdkcN",
+                    "parameterId": "57",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8530085132392532\""
+                }
+            ]
+        },
+        {
+            "id": "LWxWj",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":58,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":10,\"estimator__n_estimators\":213,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":64,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\LWxWj",
+            "startTime": 1584054943116,
+            "sequenceId": 58,
+            "endTime": 1584054984627,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584054983282,
+                    "trialJobId": "LWxWj",
+                    "parameterId": "58",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9619382063098291\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584054983282,
+                    "trialJobId": "LWxWj",
+                    "parameterId": "58",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9619382063098291\""
+                }
+            ]
+        },
+        {
+            "id": "pXQNv",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":59,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":11,\"estimator__n_estimators\":418,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":2,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\pXQNv",
+            "startTime": 1584054995739,
+            "sequenceId": 59,
+            "endTime": 1584055092045,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584055091665,
+                    "trialJobId": "pXQNv",
+                    "parameterId": "59",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9679916520159111\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584055091665,
+                    "trialJobId": "pXQNv",
+                    "parameterId": "59",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9679916520159111\""
+                }
+            ]
+        },
+        {
+            "id": "hxFuw",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":60,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":14,\"estimator__n_estimators\":466,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\hxFuw",
+            "startTime": 1584055101465,
+            "sequenceId": 60,
+            "endTime": 1584055201688,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584055200573,
+                    "trialJobId": "hxFuw",
+                    "parameterId": "60",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9687311491685202\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584055200573,
+                    "trialJobId": "hxFuw",
+                    "parameterId": "60",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9687311491685202\""
+                }
+            ]
+        },
+        {
+            "id": "qQDzD",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":61,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":13,\"estimator__n_estimators\":162,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":1,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\qQDzD",
+            "startTime": 1584055216444,
+            "sequenceId": 61,
+            "endTime": 1584055234707,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584055233353,
+                    "trialJobId": "qQDzD",
+                    "parameterId": "61",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9312368277934199\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584055233353,
+                    "trialJobId": "qQDzD",
+                    "parameterId": "61",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9312368277934199\""
+                }
+            ]
+        },
+        {
+            "id": "Sz40v",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":62,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":7,\"estimator__n_estimators\":58,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":2,\"estimator__min_samples_split\":8},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\Sz40v",
+            "startTime": 1584055242118,
+            "sequenceId": 62,
+            "endTime": 1584055255995,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584055254666,
+                    "trialJobId": "Sz40v",
+                    "parameterId": "62",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9327658993753184\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584055254666,
+                    "trialJobId": "Sz40v",
+                    "parameterId": "62",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9327658993753184\""
+                }
+            ]
+        },
+        {
+            "id": "MnOSU",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":63,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":9,\"estimator__n_estimators\":320,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\MnOSU",
+            "startTime": 1584055263212,
+            "sequenceId": 63,
+            "endTime": 1584055323499,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584055323142,
+                    "trialJobId": "MnOSU",
+                    "parameterId": "63",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9657785112764957\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584055323142,
+                    "trialJobId": "MnOSU",
+                    "parameterId": "63",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9657785112764957\""
+                }
+            ]
+        },
+        {
+            "id": "y8WGG",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":64,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":13,\"estimator__n_estimators\":229,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":32,\"estimator__min_samples_split\":32},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\y8WGG",
+            "startTime": 1584055330789,
+            "sequenceId": 64,
+            "endTime": 1584055378701,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584055377360,
+                    "trialJobId": "y8WGG",
+                    "parameterId": "64",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9662918350819876\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584055377360,
+                    "trialJobId": "y8WGG",
+                    "parameterId": "64",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9662918350819876\""
+                }
+            ]
+        },
+        {
+            "id": "gwUhw",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":65,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":8,\"estimator__n_estimators\":23,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\gwUhw",
+            "startTime": 1584055386673,
+            "sequenceId": 65,
+            "endTime": 1584055396834,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584055395478,
+                    "trialJobId": "gwUhw",
+                    "parameterId": "65",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9151193057313538\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584055395478,
+                    "trialJobId": "gwUhw",
+                    "parameterId": "65",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9151193057313538\""
+                }
+            ]
+        },
+        {
+            "id": "hkOQ2",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":66,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":11,\"estimator__n_estimators\":350,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\hkOQ2",
+            "startTime": 1584055402371,
+            "sequenceId": 66,
+            "endTime": 1584055494174,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584055493797,
+                    "trialJobId": "hkOQ2",
+                    "parameterId": "66",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9681623660329958\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584055493797,
+                    "trialJobId": "hkOQ2",
+                    "parameterId": "66",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9681623660329958\""
+                }
+            ]
+        },
+        {
+            "id": "BmuaM",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":67,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":11,\"estimator__n_estimators\":381,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\BmuaM",
+            "startTime": 1584055507089,
+            "sequenceId": 67,
+            "endTime": 1584055603256,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584055602903,
+                    "trialJobId": "BmuaM",
+                    "parameterId": "67",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9682565628066372\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584055602903,
+                    "trialJobId": "BmuaM",
+                    "parameterId": "67",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9682565628066372\""
+                }
+            ]
+        },
+        {
+            "id": "wOxDj",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":68,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":11,\"estimator__n_estimators\":201,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\wOxDj",
+            "startTime": 1584055614248,
+            "sequenceId": 68,
+            "endTime": 1584055667266,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584055666833,
+                    "trialJobId": "wOxDj",
+                    "parameterId": "68",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.966608781802484\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584055666833,
+                    "trialJobId": "wOxDj",
+                    "parameterId": "68",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.966608781802484\""
+                }
+            ]
+        },
+        {
+            "id": "m3RwJ",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":69,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":11,\"estimator__n_estimators\":352,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\m3RwJ",
+            "startTime": 1584055679511,
+            "sequenceId": 69,
+            "endTime": 1584055766458,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584055766111,
+                    "trialJobId": "m3RwJ",
+                    "parameterId": "69",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9682746983063097\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584055766111,
+                    "trialJobId": "m3RwJ",
+                    "parameterId": "69",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9682746983063097\""
+                }
+            ]
+        },
+        {
+            "id": "UGutR",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":70,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":4,\"estimator__n_estimators\":217,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\UGutR",
+            "startTime": 1584055774735,
+            "sequenceId": 70,
+            "endTime": 1584055807316,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584055806894,
+                    "trialJobId": "UGutR",
+                    "parameterId": "70",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9617883516230153\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584055806894,
+                    "trialJobId": "UGutR",
+                    "parameterId": "70",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9617883516230153\""
+                }
+            ]
+        },
+        {
+            "id": "k7FKT",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":71,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":5,\"estimator__n_estimators\":303,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":4,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\k7FKT",
+            "startTime": 1584055821578,
+            "sequenceId": 71,
+            "endTime": 1584055864324,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584055863929,
+                    "trialJobId": "k7FKT",
+                    "parameterId": "71",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9640753858117478\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584055863929,
+                    "trialJobId": "k7FKT",
+                    "parameterId": "71",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9640753858117478\""
+                }
+            ]
+        },
+        {
+            "id": "dgLB7",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":72,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":3,\"estimator__n_estimators\":382,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":2,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\dgLB7",
+            "startTime": 1584055873361,
+            "sequenceId": 72,
+            "endTime": 1584055914346,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584055913948,
+                    "trialJobId": "dgLB7",
+                    "parameterId": "72",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9627037739809984\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584055913948,
+                    "trialJobId": "dgLB7",
+                    "parameterId": "72",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9627037739809984\""
+                }
+            ]
+        },
+        {
+            "id": "TTKvC",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":73,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":13,\"estimator__n_estimators\":382,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":8,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\TTKvC",
+            "startTime": 1584055926020,
+            "sequenceId": 73,
+            "endTime": 1584056032849,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584056031913,
+                    "trialJobId": "TTKvC",
+                    "parameterId": "73",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9683489212389458\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584056031913,
+                    "trialJobId": "TTKvC",
+                    "parameterId": "73",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9683489212389458\""
+                }
+            ]
+        },
+        {
+            "id": "DUF2i",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":74,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":11,\"estimator__n_estimators\":159,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\DUF2i",
+            "startTime": 1584056044426,
+            "sequenceId": 74,
+            "endTime": 1584056087412,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584056087004,
+                    "trialJobId": "DUF2i",
+                    "parameterId": "74",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9679468413250211\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584056087004,
+                    "trialJobId": "DUF2i",
+                    "parameterId": "74",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9679468413250211\""
+                }
+            ]
+        },
+        {
+            "id": "zShSP",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":75,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":6,\"estimator__n_estimators\":402,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":64,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\zShSP",
+            "startTime": 1584056097347,
+            "sequenceId": 75,
+            "endTime": 1584056156800,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584056155464,
+                    "trialJobId": "zShSP",
+                    "parameterId": "75",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9625608080734561\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584056155464,
+                    "trialJobId": "zShSP",
+                    "parameterId": "75",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9625608080734561\""
+                }
+            ]
+        },
+        {
+            "id": "rTTvY",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":76,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":2,\"estimator__n_estimators\":389,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":1,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\rTTvY",
+            "startTime": 1584056166722,
+            "sequenceId": 76,
+            "endTime": 1584056199808,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584056198456,
+                    "trialJobId": "rTTvY",
+                    "parameterId": "76",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9569572219579893\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584056198456,
+                    "trialJobId": "rTTvY",
+                    "parameterId": "76",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9569572219579893\""
+                }
+            ]
+        },
+        {
+            "id": "wGUUK",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":77,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":11,\"estimator__n_estimators\":411,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":2,\"estimator__min_samples_split\":32},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\wGUUK",
+            "startTime": 1584056210677,
+            "sequenceId": 77,
+            "endTime": 1584056246814,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584056245469,
+                    "trialJobId": "wGUUK",
+                    "parameterId": "77",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9525159495755613\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584056245469,
+                    "trialJobId": "wGUUK",
+                    "parameterId": "77",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9525159495755613\""
+                }
+            ]
+        },
+        {
+            "id": "g7IwP",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":78,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":12,\"estimator__n_estimators\":156,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\g7IwP",
+            "startTime": 1584056257054,
+            "sequenceId": 78,
+            "endTime": 1584056297499,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584056297132,
+                    "trialJobId": "g7IwP",
+                    "parameterId": "78",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.966677984488597\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584056297132,
+                    "trialJobId": "g7IwP",
+                    "parameterId": "78",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.966677984488597\""
+                }
+            ]
+        },
+        {
+            "id": "vkX6c",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":79,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":13,\"estimator__n_estimators\":265,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":32,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\vkX6c",
+            "startTime": 1584056308562,
+            "sequenceId": 79,
+            "endTime": 1584056382721,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584056381585,
+                    "trialJobId": "vkX6c",
+                    "parameterId": "79",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9658934998900959\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584056381585,
+                    "trialJobId": "vkX6c",
+                    "parameterId": "79",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9658934998900959\""
+                }
+            ]
+        },
+        {
+            "id": "OLGyr",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":80,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":10,\"estimator__n_estimators\":89,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":2,\"estimator__min_samples_split\":8},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\OLGyr",
+            "startTime": 1584056397253,
+            "sequenceId": 80,
+            "endTime": 1584056422770,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584056421422,
+                    "trialJobId": "OLGyr",
+                    "parameterId": "80",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9578164306032472\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584056421422,
+                    "trialJobId": "OLGyr",
+                    "parameterId": "80",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9578164306032472\""
+                }
+            ]
+        },
+        {
+            "id": "aGVN4",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":81,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":14,\"estimator__n_estimators\":46,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":true,\"estimator__min_samples_leaf\":4,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\aGVN4",
+            "startTime": 1584056429464,
+            "sequenceId": 81,
+            "endTime": 1584056448566,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584056447223,
+                    "trialJobId": "aGVN4",
+                    "parameterId": "81",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9599796074558634\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584056447223,
+                    "trialJobId": "aGVN4",
+                    "parameterId": "81",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9599796074558634\""
+                }
+            ]
+        },
+        {
+            "id": "kTHtE",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":82,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":7,\"estimator__n_estimators\":144,\"estimator__max_features\":\"log2\",\"estimator__criterion\":\"gini\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":8,\"estimator__min_samples_split\":16},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\kTHtE",
+            "startTime": 1584056462329,
+            "sequenceId": 82,
+            "endTime": 1584056480326,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584056479851,
+                    "trialJobId": "kTHtE",
+                    "parameterId": "82",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8689048769113886\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584056479851,
+                    "trialJobId": "kTHtE",
+                    "parameterId": "82",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.8689048769113886\""
+                }
+            ]
+        },
+        {
+            "id": "VcoWQ",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":83,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":13,\"estimator__n_estimators\":480,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":16,\"estimator__min_samples_split\":64},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\VcoWQ",
+            "startTime": 1584056490144,
+            "sequenceId": 83,
+            "endTime": 1584056618046,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584056617900,
+                    "trialJobId": "VcoWQ",
+                    "parameterId": "83",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9681895743931005\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584056617900,
+                    "trialJobId": "VcoWQ",
+                    "parameterId": "83",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9681895743931005\""
+                }
+            ]
+        },
+        {
+            "id": "EJAR8",
+            "status": "SUCCEEDED",
+            "hyperParameters": [
+                "{\"parameter_id\":84,\"parameter_source\":\"algorithm\",\"parameters\":{\"estimator__max_depth\":9,\"estimator__n_estimators\":239,\"estimator__max_features\":\"sqrt\",\"estimator__criterion\":\"entropy\",\"estimator__bootstrap\":false,\"estimator__min_samples_leaf\":64,\"estimator__min_samples_split\":32},\"parameter_index\":0}"
+            ],
+            "logPath": "file://localhost:C:\\Users\\soobt\\nni\\experiments\\mkw74yXH\\trials\\EJAR8",
+            "startTime": 1584056632855,
+            "sequenceId": 84,
+            "endTime": 1584056686058,
+            "finalMetricData": [
+                {
+                    "timestamp": 1584056685718,
+                    "trialJobId": "EJAR8",
+                    "parameterId": "84",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9624025253233155\""
+                }
+            ],
+            "intermediate": [
+                {
+                    "timestamp": 1584056685718,
+                    "trialJobId": "EJAR8",
+                    "parameterId": "84",
+                    "type": "FINAL",
+                    "sequence": 0,
+                    "data": "\"0.9624025253233155\""
+                }
+            ]
+        }
+    ]
+}

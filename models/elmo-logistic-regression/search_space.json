@@ -1,0 +1,4 @@
+{
+    "estimator__C": {"_type":"loguniform","_value":[0.00001, 100000]},
+    "estimator__penalty": {"_type":"choice","_value":["l2"]}
+}

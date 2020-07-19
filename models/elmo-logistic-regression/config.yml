@@ -1,0 +1,20 @@
+authorName: default
+experimentName: elmo_random_forest
+trialConcurrency: 1
+maxExecDuration: 1h
+maxTrialNum: 100
+#choice: local, remote
+trainingServicePlatform: local
+searchSpacePath: search_space.json
+#choice: true, false
+useAnnotation: false
+tuner:
+  #choice: TPE, Random, Anneal, Evolution, BatchTuner, MetisTuner
+  builtinTunerName: Evolution
+  classArgs:
+    #choice: maximize, minimize
+    optimize_mode: maximize
+trial:
+  command: C:\Users\soobt\.virtualenvs\Python_Scripts-mmjP8m20\Scripts\python.exe main.py
+  codeDir: .
+  gpuNum: 1
