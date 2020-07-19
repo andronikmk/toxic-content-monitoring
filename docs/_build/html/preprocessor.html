@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>preprocessor module &#8212; Toxic Comment Monitoring 2.0.5 documentation</title>
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="model module" href="model.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="model.html" title="model module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Toxic Comment Monitoring 2.0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" accesskey="U">toxic-content-monitoring</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">preprocessor module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-src.preprocessor">
+<span id="preprocessor-module"></span><h1>preprocessor module<a class="headerlink" href="#module-src.preprocessor" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="src.preprocessor.clean_text">
+<code class="sig-prename descclassname">src.preprocessor.</code><code class="sig-name descname">clean_text</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.preprocessor.clean_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>[Function for cleaning text and removing characters, user identification, and
+non-printable characters that can interfere with the model’s ability to make
+accurate predictions.]</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>[</em><em>string</em><em>]</em>) – [A string unprocessed string with characters to be removed.]</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>[Cleaned version of the string.]</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>[string]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="src.preprocessor.normalize_comment">
+<code class="sig-prename descclassname">src.preprocessor.</code><code class="sig-name descname">normalize_comment</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">comment</span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.preprocessor.normalize_comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>[Does a variety of normalizing steps, such as separating punctuation and
+decensoring, before splitting words within a sentence into a list of words.]</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>comment</strong> (<em>[</em><em>string</em><em>]</em>) – [A string]</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>[cleaned version of string, which helps reveal toxic words]</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>[string]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="src.preprocessor.split_word">
+<code class="sig-prename descclassname">src.preprocessor.</code><code class="sig-name descname">split_word</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">word</span></em>, <em class="sig-param"><span class="n">toxic_words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.preprocessor.split_word" title="Permalink to this definition">¶</a></dt>
+<dd><p>[Function that accounts for toxic words being hidden within normal text. If
+any of the toxic words are found, it will split the non-toxic text, exposing
+the toxic word.]</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>word</strong> (<em>[</em><em>string</em><em>]</em>) – [A string containing a toxic word.]</p></li>
+<li><p><strong>toxic_words</strong> (<em>[</em><em>strings</em><em>]</em>) – [List of toxic words.]</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>[Toxic word.]</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>[string]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="src.preprocessor.word_tokenize">
+<code class="sig-prename descclassname">src.preprocessor.</code><code class="sig-name descname">word_tokenize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sentence</span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.preprocessor.word_tokenize" title="Permalink to this definition">¶</a></dt>
+<dd><p>[Function that tokenizes text and replaces associated characters with letters
+as well as adds spaces around punctuation.]</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>sentence</strong> (<em>[</em><em>string</em><em>]</em>) – [A string.]</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>[List of strings. Each component of the sentence as its own string.]</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>[List]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="model.html"
+                        title="previous chapter">model module</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/preprocessor.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="model.html" title="model module"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Toxic Comment Monitoring 2.0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >toxic-content-monitoring</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">preprocessor module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Andronik Mkrtychev.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
+    </div>
+  </body>
+</html>

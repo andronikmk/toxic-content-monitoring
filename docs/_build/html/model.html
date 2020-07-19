@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>model module &#8212; Toxic Comment Monitoring 2.0.5 documentation</title>
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="preprocessor module" href="preprocessor.html" />
+    <link rel="prev" title="main module" href="main.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="preprocessor.html" title="preprocessor module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="main.html" title="main module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Toxic Comment Monitoring 2.0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" accesskey="U">toxic-content-monitoring</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">model module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-src.model">
+<span id="model-module"></span><h1>model module<a class="headerlink" href="#module-src.model" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="src.model.ToxicClassifierModel">
+<em class="property">class </em><code class="sig-prename descclassname">src.model.</code><code class="sig-name descname">ToxicClassifierModel</code><a class="headerlink" href="#src.model.ToxicClassifierModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>[Base class for all neural network modules.]</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nn</strong> (<em>[</em><em>object</em><em>]</em>) – [Neural network model using PyTorch NLP.</p></li>
+<li><p><strong>can also contain other Modules</strong><strong>, </strong><strong>allowing to nest them in a tree structure.</strong><strong>]</strong> (<em>Modules</em>) – </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="src.model.ToxicClassifierModel.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.model.ToxicClassifierModel.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>[A feed forward network. It takes the input and feeds it through several layers
+one after the other, and returns an output]</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>X</strong> (<em>[</em><em>torch.float32</em><em>]</em>) – [A vector matrix]</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>[description]</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>[Object]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="main.html"
+                        title="previous chapter">main module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="preprocessor.html"
+                        title="next chapter">preprocessor module</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/model.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="preprocessor.html" title="preprocessor module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="main.html" title="main module"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Toxic Comment Monitoring 2.0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >toxic-content-monitoring</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">model module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Andronik Mkrtychev.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
+    </div>
+  </body>
+</html>
