@@ -7,12 +7,12 @@ import sys
 from unidecode import unidecode
 
 # files of top 100 toxic words associated with each label
-wordFiles = ["data/identity_hateWordFile.txt",
-             "data/insultWordFile.txt",
-             "data/threatWordFile.txt",
-             "data/toxicWordFile.txt",
-             "data/obsceneWordFile.txt",
-             "data/severe_toxicWordFile.txt"]
+wordFiles = ["../data/identity_hateWordFile.txt",
+             "../data/insultWordFile.txt",
+             "../data/threatWordFile.txt",
+             "../data/toxicWordFile.txt",
+             "../data/obsceneWordFile.txt",
+             "../data/severe_toxicWordFile.txt"]
 
 toxic_words = set([])
 length_threshold = 20000
