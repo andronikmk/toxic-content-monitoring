@@ -9,7 +9,7 @@ from src.preprocessor import normalize_comment, clean_text
 
 # load model
 model = ToxicClassifierModel()
-model.load_state_dict(torch.load("data/TCM_2.pt", map_location=torch.device('cpu')))
+model.load_state_dict(torch.load("../data/TCM_2.pt", map_location=torch.device('cpu')))
 model.eval()
 
 # FastAPI
@@ -25,7 +25,7 @@ async def predict(data: Data):
     This API accepts string based requests and preprocesses the text before
     running it through the predictive model.
 
-    **Preprocessing**
+    **Preprocessing:**
     The following are removed:
     - Newline characters
     - Return characters
@@ -41,13 +41,14 @@ async def predict(data: Data):
     non-toxic content, it will split the text before and after so the toxic words
     are identified.
 
-    **Making Requests**
+    **Making Requests:**
 
     Example Request Body:
 
     {"text": "string"}
 
-    **Model**
+    **Model:**
+    
     The model is used to determine if the text contains toxic or offensive content.
 
     The possible labels are:
