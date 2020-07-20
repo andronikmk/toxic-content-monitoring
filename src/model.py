@@ -38,10 +38,10 @@ class ToxicClassifierModel(nn.Module):
             [Object]: [description]
         """
         x = x.permute(0, 2, 1)
-        x = F.dropout2d(X, 0.2, training=self.training)
+        x = F.dropout2d(x, 0.2, training=self.training)
         x = x.permute(0, 2, 1)
-        x = self.BiGRU(X)
-        x = self.BiRNN(X[0])
+        x = self.BiGRU(x)
+        x = self.BiRNN(x[0])
         x = x[0]
         x = torch.cat((torch.max(x, 1).values, torch.mean(x, 1)), 1)
         x = x.add(F.relu(self.hidden1(x)))

@@ -9,7 +9,7 @@ from src.preprocessor import normalize_comment, clean_text
 
 # load model
 model = ToxicClassifierModel()
-model.load_state_dict(torch.load("../data/TCM_2.pt", map_location=torch.device('cpu')))
+model.load_state_dict(torch.load("data/TCM_2.pt", map_location=torch.device('cpu')))
 model.eval()
 
 # FastAPI
