@@ -47,9 +47,8 @@ python -m ipykernel install --user --name toxic-content-monitoring  --display "t
 ```
 
 ## Run it
-```bash
+```console
 uvicorn src.main:app --host 0.0.0.0
-
 INFO:     Started server process [67600]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
