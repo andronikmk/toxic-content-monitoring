@@ -30,9 +30,18 @@ git clone https://github.com/andronikmk/toxic-content-monitoring.git
 cd toxic-content-monitoring
 ```
 ## Create enviornment with conda and pip
-Make sure to be in the correct project directory.
+Make sure to be in the correct directory.
 ```bash
+# create conda env.
 conda create -n toxic-content-monitoring python==3.7
+
+# activate env
 conda activate toxic-content-monitoring
+
+# pip install dependencies
 pip install -r requirements.txt
+
+# add JSON object to an iPython file.
+python -m ipykernel install --user --name toxic-content-monitoring  --display "toxic-content-monitoring (Python3)"
+
 ```
