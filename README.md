@@ -24,3 +24,14 @@ This repo is tested on Python 3.7+, PyTorch 1.0.0+ (PyTorch 1.3.1+ for examples)
 You should install Toxic Content Monitoring in a virtual [virtual environment](https://docs.python.org/3/library/venv.html). If you're unfamiliar with Python virtual environments, check out the [user guide](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/).
 This project was created using [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html), if you are infamilier with [Anaconda](https://www.anaconda.com/), please reference this [cheat sheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf) after you install you choice of Anaconda distrubution.
 
+## From source
+```bash
+git clone https://github.com/andronikmk/toxic-content-monitoring.git
+cd toxic-content-monitoring
+```
+## Create enviornment with conda and pip
+```bash
+conda create -n toxic-content-monitoring python==3.7
+conda activate toxic-content-monitoring
+pip install -r requirements.txt
+```
