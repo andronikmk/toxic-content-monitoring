@@ -30,6 +30,7 @@ git clone https://github.com/andronikmk/toxic-content-monitoring.git
 cd toxic-content-monitoring
 ```
 ## Create enviornment with conda and pip
+Make sure to be in the correct project directory.
 ```bash
 conda create -n toxic-content-monitoring python==3.7
 conda activate toxic-content-monitoring
