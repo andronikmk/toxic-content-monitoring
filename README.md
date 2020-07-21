@@ -45,3 +45,13 @@ pip install -r requirements.txt
 python -m ipykernel install --user --name toxic-content-monitoring  --display "toxic-content-monitoring (Python3)"
 
 ```
+
+## Run it
+```bash
+uvicorn src.main:app --host 0.0.0.0
+
+INFO:     Started server process [67600]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+```
