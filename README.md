@@ -57,9 +57,11 @@ INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 ```
 
 ## Check it
+1. The [FastAPI](https://fastapi.tiangolo.com/) interface will be located on
+    the docs page, i.e. http://0.0.0.0:8000/docs
+
 ```JSON
 {
   "text": "string"
 }
-
 ```
