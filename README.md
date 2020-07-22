@@ -89,4 +89,23 @@ Now go to http://0.0.0.0:8000/docs
 <p>
 
 ## Docker
-### TODO...
+In addition, you can pull the [docker image](https://hub.docker.com/r/andronikmk/toxic-content-monitoring) to you local machine and run or locally. Or pull it to a
+instance on Amazon AWS, GCP, etc..
+
+```bash
+# Pull the docker image to local machine.
+docker pull andronikmk/toxic-content-monitoring:0.1
+
+# Run the docker image
+docker run -it andronikmk/toxic-content-monitoring:0.1
+```
+
+```console
+# Output after running the docker image
+docker run -it andronikmk/toxic-content-monitoring:0.1
+
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000
+```
