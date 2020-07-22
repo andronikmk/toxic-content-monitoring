@@ -99,11 +99,7 @@ docker pull andronikmk/toxic-content-monitoring:0.1
 # Run the docker image
 docker run -it andronikmk/toxic-content-monitoring:0.1
 ```
-
 ```console
-# Output after running the docker image
-docker run -it andronikmk/toxic-content-monitoring:0.1
-
 INFO:     Started server process [1]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
