@@ -13,7 +13,7 @@
 
 ### Table of Contents
 - [Introduction to Toxic Content Monitoring](#introduction-to-toxic-content-monitoring)
-- [Installation](#installation)
+- [Install](#install)
   - [From source](#from-source)
   - [Create enviornment with conda and pip](#create-enviornment-with-conda-and-pip)
 - [Run it](#run-it)
@@ -30,7 +30,7 @@ This project creates an API that can be integrated into an applications used by 
 a social worker, to detect concerning behaviors. It gives the end-user the ability to send 
 information to the API, and get meaningful results.
 
-# Installation
+# Install
 This repo is tested on Python 3.7+, PyTorch 1.0.0+ (PyTorch 1.3.1+ for examples) and TensorFlow 2.0.
 
 You should install Toxic Content Monitoring in a virtual [virtual environment](https://docs.python.org/3/library/venv.html). If you're unfamiliar with Python virtual environments, check out the [user guide](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/).
