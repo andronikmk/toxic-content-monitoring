@@ -10,7 +10,19 @@
     </a>
 </p>
 
-# Toxic Content Monitoring
+
+### Table of Contents
+- [Introduction to Toxic Content Monitoring](#introduction-to-toxic-content-monitoring)
+- [Installation](#installation)
+  - [From source](#from-source)
+  - [Create enviornment with conda and pip](#create-enviornment-with-conda-and-pip)
+- [Run it](#run-it)
+- [Check it](#check-it)
+- [Interactive API docs](#interactive-api-docs)
+- [Docker](#docker)
+
+
+# Introduction to Toxic Content Monitoring
 
 While there exist systems for detecting toxicity, suicidality, and other concerning behaviors, 
 they are all either whole-system programs or are limited to only a small number of topics. 
@@ -46,7 +58,7 @@ python -m ipykernel install --user --name toxic-content-monitoring  --display "t
 
 ```
 
-## Run it
+# Run it
 ```console
 $ uvicorn src.main:app --host 0.0.0.0
 
@@ -56,7 +68,7 @@ INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 ```
 
-## Check it
+# Check it
 The [FastAPI](https://fastapi.tiangolo.com/) interface will be located on the docs page, i.e. http://0.0.0.0:8000/docs
 
 You will see the JSON response as:
@@ -66,7 +78,7 @@ You will see the JSON response as:
 }
 ```
 
-## Interactive API docs
+# Interactive API docs
 
 Now go to http://0.0.0.0:8000/docs
 
@@ -88,7 +100,7 @@ Now go to http://0.0.0.0:8000/docs
     <br>
 <p>
 
-## Docker
+# Docker
 In addition, you can pull the [docker image](https://hub.docker.com/r/andronikmk/toxic-content-monitoring) to you local machine and run or locally. Or pull it to a
 instance on Amazon AWS, GCP, etc..
 
