@@ -54,7 +54,7 @@ conda activate toxic-content-monitoring
 pip install -r requirements.txt
 
 # add JSON object to an iPython file.
-python -m ipykernel install --user --name toxic-content-monitoring  --display "toxic-content-monitoring (Python3)"
+python -m ipykernel install --user --name toxic-content-monitoring --display "toxic-content-monitoring (Python3)"
 
 ```
 
