@@ -1,0 +1,21 @@
+Model,ROC_AUC,F1
+Balanced_Random_Forest_Classifier_with_BERT,0.9323,0.38242
+Balanced_Random_Forest_Classifier_with_small_BERT,0.90232,0.36099
+Balanced_Random_ Forest _Classifier_with_ELMO,0.83428,0.174638
+Balanced_Random_Forest_Classifier_with_TF_IDF,0.94207,0.28251
+Decision_Tree_Classifier_with_BERT,0.791093,0.273122
+Decision_Tree_Classifier_with_small_BERT,0.79749,0.31962
+Decision_Tree_Classifier_with_ELMO,0.69101,0.15014
+Decision_Tree_Classifier_with_TF_IDF,0.79163,0.500716
+RUSBOOST_Classifier_with_small_BERT,0.94423,0.43464
+RUSBOOST_Classifier_with_BERT,0.95087,0.47602
+RUSBOOST_Classifier_with_ELMO,0.86849,0.16953
+RUSBOOST_Classifier_with_TF_IDF,0.94934,0.62395
+Logistic Regression with Basilica encodings,0.972743467719932,0.541609822646658
+Logistic Regression with Bert encodings,0.958896769113873,0.490343049771961
+Logistic Regression with Elmo encodings,0.882755758259569,0.235844703711028
+Logistic Regression with Elmo encodings,0.882755758259569,0.235844703711028
+Logistic Regression with TFIDF,0.975280171657911,0.668372008039466
+Logistic Regression with TFIDF_v2,0.978803759624453,0.671102162304123
+Logistic Regression with small Bert encodings,0.970553031544215,0.510601273068645
+Pytorch_Kaggle_Model,0.987102339582514,0.753316156121767
