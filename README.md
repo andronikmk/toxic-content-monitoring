@@ -19,6 +19,7 @@
 - [Interactive API docs](#interactive-api-docs)
 - [Docker](#docker)
 - [Presentation and Demo](#presentation-and-demo)
+- [Reference](#reference)
 - [Contributors](#contributors)
 
 
@@ -121,6 +122,10 @@ INFO:     Uvicorn running on http://127.0.0.1:8000
 # Presentation and Demo
 
 Here is a [link](http://www.youtube.com/watch?v=07FHLrQGM7k) to the demo.
+
+
+# Reference
+Here is the [link](https://github.com/orgs/big-armor/teams/labs-23-data-science) to the original repositories.
 
 # Contributors
 [<img alt="andronikmk" src="https://avatars3.githubusercontent.com/u/14141868?s=400&u=44031fd47b2eceb8fa61eca14a69ebd0e5720f78&v=4" width="142">](https://github.com/andronikmk) |[<img alt="celestebgriff" src="https://avatars0.githubusercontent.com/u/58431582?s=400&u=946065f2a65fa82e0bd7ea208b61b94145af3525&v=4" width="142">](https://github.com/celestebgriff) |[<img alt="bamfranceschi" src="https://avatars3.githubusercontent.com/u/40441965?s=400&u=fd23fe2f4191b58148af21b7eaacaa957917ed8f&v=4" width="142">](https://github.com/bamfranceschi) |[<img alt="cshields143" src="https://avatars2.githubusercontent.com/u/42680346?s=400&u=f4c495bb7cd95beb9687b8a11baa5ec5fde11309&v=4" width="142">](https://github.com/cshields143) |[<img alt="traviscollins" src="https://avatars2.githubusercontent.com/u/923065?s=400&v=4" width="142">](https://github.com/traviscollins) |[<img alt="MaxTheMooshroom" src="https://avatars0.githubusercontent.com/u/25956545?s=400&v=4" width="142">](https://github.com/MaxTheMooshroom) |
