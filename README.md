@@ -11,6 +11,7 @@
 
 ### Table of Contents
 - [Introduction to Toxic Content Monitoring](#introduction-to-toxic-content-monitoring)
+- [Models and Metrics](#models-and-metrics)
 - [Install](#install)
   - [From source](#from-source)
   - [Create enviornment with conda and pip](#create-enviornment-with-conda-and-pip)
@@ -30,6 +31,26 @@ they are all either whole-system programs or are limited to only a small number 
 This project creates an API that can be integrated into an applications used by anyone, such as 
 a social worker, to detect concerning behaviors. It gives the end-user the ability to send 
 information to the API, and get meaningful results.
+
+# Models and Metrics
+
+Our model is used to determine if text contains the following characteristics:
++ toxic
++ severe toxic
++ obscene
++ threat
++ insult
++ identity hate
+
+The API returns clean text, labeled True or False, and the predicted probability of each. The current model is a Bi-directional LSTM + GRU neural network made with PyTorch, assuming FastText vectorization. Considerable preprocessing is performed on the text before vectorization. The metrics used for evaluation are F1 and ROC-AUC scores.
+
+<p align="center">
+    <br>
+    <img src="https://raw.githubusercontent.com/andronikmk/toxic-content-monitoring/master/reports/figures/baselines-with-labels.png"/>
+    <br>
+<p>
+
+F1 score is defined as the harmonic mean between precision and recall and is measured on a scale from 0 to 1. Recall demonstrates how effectively this model identifies all relevant instances of toxicity. Precision demonstrates how effectively the model returns only these relevant instances. The AUC score represents the measure of separability, in this case, distinguishing between toxic and non-toxic content. Also on a scale of 0 to 1, a high AUC score indicates the model successfully classifies toxic vs non-toxic. The ROC represents the probability curve. The F1 score for this model is 0.753 and the ROC-AUC score is 0.987. The figure above shows all the various models our team assembled with top performing model show on the top right hand side of the chart.
 
 # Install
 This repo is tested on Python 3.7+, PyTorch 1.0.0+ (PyTorch 1.3.1+ for examples) and TensorFlow 2.0.
@@ -102,8 +123,8 @@ Now go to http://0.0.0.0:8000/docs
 <p>
 
 # Docker
-In addition, you can pull the [docker image](https://hub.docker.com/r/andronikmk/toxic-content-monitoring) to you local machine and run or locally. Or pull it to a
-instance on Amazon AWS, GCP, etc..
+In addition, you can pull the [docker image](https://hub.docker.com/r/andronikmk/toxic-content-monitoring) to your local machine and run it locally. In addition, you can pull it to a
+instance on Amazon AWS, Google Cloud Platform or Azure.
 
 ```bash
 # Pull the docker image to local machine.
